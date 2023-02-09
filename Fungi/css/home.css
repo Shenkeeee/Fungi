@@ -90,3 +90,66 @@ ul li a:hover{
     font-size: 100px
 }
 
+
+
+
+
+ /*Learning and resourceshez*/
+
+ /* videoWrapper optimalizálja a videót több screen sizera */
+.videoWrapper {
+     position: relative;
+     padding-bottom: 56.25%; /* 16:9 */
+     height: 0;
+}
+.videoWrapper iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+
+
+
+
+/*Types of fungihoz*/
+
+table{
+     /*centering*/
+     width:98%;
+     margin:1%;
+}
+
+
+/*táblázat*/
+/*fejléc*/
+th
+{
+     /*fix oszlopméret*/
+     width: 10%;
+
+     text-align: center;
+     font-size: large;
+     background-color: darkseagreen;
+}
+
+/*adatok*/
+td
+{
+     text-align: center;
+     background-color: darkseagreen;
+}
+
+.fungiTableImg
+{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s
+}
+
+
+.fungiTableImg:hover{
+    transform: scale(2);
+}
