@@ -4,19 +4,12 @@
 <html lang="en">
 <head>
     <title>Fungi</title>
-    <link rel="stylesheet" href="../css/welcome.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="icon" href="../img/icon.png"/>
 </head>
 <body>
-    
-<style>
-body {
-  background-image: url('../img/1.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
+
+<!--háttér cssben-->
 
     <div class="main">
         <?php
