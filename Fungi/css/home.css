@@ -44,7 +44,7 @@ ul li{
 }
 
 ul li a{
-    text-decoration: none;
+    text-decoration-line: none;
     color: rgb(255, 255, 255);
     font-family: Arial, serif;
     font-weight: bold;
@@ -152,4 +152,18 @@ td
 
 .fungiTableImg:hover{
     transform: scale(2);
+}
+
+
+
+
+
+
+/*navbar*/
+
+#selected
+{
+ text-decoration: underline;
+ text-decoration-color: rgb(173, 214, 9);;
+ text-decoration-thickness: 2px;
 }

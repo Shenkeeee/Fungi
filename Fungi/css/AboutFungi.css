@@ -103,4 +103,17 @@ body
 
 
 
+
+
+/*navbar*/
+
+#selected
+{
+  text-decoration: underline;
+  text-decoration-color: rgb(173, 214, 9);;
+  text-decoration-thickness: 2px;
+}
+
+
+
   
