@@ -1,169 +1,72 @@
  /*FUNGIIIII*/
   /*143,177,6*/
-/*w*{*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*}*/
+*{
+    /*do we need this? TODO */
 
-.main{
-    width: 100%;
-    /*background-image: 2.jpg;
-    background-position: center; */
-    background-size: cover;
-    height: 100vh;
+    /*margin: 0;*/
+    /*padding: 0;*/
 }
 
 
 body
 {
-    background-image: url('../img/1.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+     background-image: url('../img/background/1.jpg');
+     /*background-repeat: no-repeat;*/
+     /*background-attachment: fixed;*/
+     /*background-size: cover;*/
 }
 
-.menu{
-    text-align: right;
-    width: 100px;
-    /*float: center;*/
-    height: 70px;
-}
+/* Ami ki van kommentelve az a for allban van megvalósítva, jelenleg minden másra is vonatkozik*/
+/* azért hagytam benn hogy lásd hogy mi volt itt ha kell*/
 
-ul{
-    float: left;
-    display: flex;
-    align-items: center;
-    
-}
-
-ul li{
-    list-style: none;
-    margin-left: 75px;
-    margin-top: 27px;
-    font-size: 45px;
-}
-
-ul li a{
-    text-decoration-line: none;
-    color: rgb(255, 255, 255);
-    font-family: Arial, serif;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-    text-align: right;
-}
-
-ul li a:hover{
-    color: rgb(173, 214, 9);
-}
+/*.main{*/
+/*    width: 100%;*/
+/*    !*background-image: 2.jpg;*/
+/*    background-position: center; *!*/
+/*    background-size: cover;*/
+/*    height: 100vh;*/
+/*}*/
 
 
+
+/*.menu{*/
+/*    !*text-align: right;*!*/
+/*    width: 100px;*/
+/*    !*float: center;*!*/
+/*    height: 70px;*/
+/*}*/
 
 /* Név */
 
-.content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color: rgb(255, 255, 255);
-    position: relative;
-}
-
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial, serif;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.content h1{
-    font-family: 'Times New Roman', serif;
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
+/* !* content *!*/
 
 
-.content span{
-    color: rgb(173, 214, 9);
-    font-size: 100px
-}
+/* .content{*/
+/*     width: 1200px;*/
+/*     height: auto;*/
+/*     margin: auto;*/
+/*     color: rgb(255, 255, 255);*/
+/*     position: relative;*/
+/* }*/
+
+/* .content .par{*/
+/*     padding-left: 20px;*/
+/*     padding-bottom: 25px;*/
+/*     font-family: Arial, serif;*/
+/*     letter-spacing: 1.2px;*/
+/*     line-height: 30px;*/
+/* }*/
+
+/* .content h1{*/
+/*     font-family: 'Times New Roman', serif;*/
+/*     font-size: 50px;*/
+/*     padding-left: 20px;*/
+/*     margin-top: 9%;*/
+/*     letter-spacing: 2px;*/
+/* }*/
 
 
-
-
-
- /*Learning and resourceshez*/
-
- /* videoWrapper optimalizálja a videót több screen sizera */
-.videoWrapper {
-     position: relative;
-     padding-bottom: 56.25%; /* 16:9 */
-     height: 0;
-}
-.videoWrapper iframe {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-}
-
-
-
-
-
-/*Types of fungihoz*/
-
-table{
-     /*centering*/
-     width:98%;
-     margin:1%;
-}
-
-
-/*táblázat*/
-/*fejléc*/
-th
-{
-     /*fix oszlopméret*/
-     width: 10%;
-
-     text-align: center;
-     font-size: large;
-     background-color: darkseagreen;
-}
-
-/*adatok*/
-td
-{
-     text-align: center;
-     background-color: darkseagreen;
-}
-
-.fungiTableImg
-{
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s
-}
-
-
-.fungiTableImg:hover{
-    transform: scale(2);
-}
-
-
-
-
-
-
-/*navbar*/
-
-#selected
-{
- text-decoration: underline;
- text-decoration-color: rgb(173, 214, 9);;
- text-decoration-thickness: 2px;
-}
+/*.content span{*/
+/*    color: rgb(173, 214, 9);*/
+/*    font-size: 100px*/
+/*}*/

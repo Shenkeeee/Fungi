@@ -1,6 +1,6 @@
 *{
-  margin:0;
-  padding:0;
+  /*margin:0;*/
+  /*padding:0;*/
   font-family: 'Times New Roman', serif;
   box-sizing: border-box;
 }
@@ -95,7 +95,7 @@ ul li a:hover{
 
 body
 {
-  background-image: url('../img/4.png');
+  background-image: url('../img/background/4.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
