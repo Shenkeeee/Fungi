@@ -21,7 +21,7 @@
             <h1><span>FANTASTIC  <br> FUNGI</span> </h1>
          
 			<h2></h2>
-            <h2 class="par">Német Tímea és Subicz Máté</h2>
+            <h2 class="par">Timea Nemet & Mate Subicz</h2>
         </div>
     </div>
     
