@@ -29,6 +29,7 @@ body{
     margin: 0 0;
     width: 100%;
     overflow: hidden;
+    z-index: 10;
 
     text-align: center;
     align-self: auto;
@@ -77,6 +78,7 @@ ul li a:hover{
     margin: 0;
     padding: 0 0 1px 0;
 
+
     /* Making the background fade a bit - ik its terrible of a solution*/
     /*background: rgba(0, 0, 0, 15%);*/
     /*min-height: 99.85vh;     one screen long */
@@ -99,6 +101,7 @@ ul li a:hover{
 .content span{
     color: rgb(173, 214, 9);
     font-size: 90px;
+    
 }
 
 
