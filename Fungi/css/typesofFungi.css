@@ -90,7 +90,7 @@ body
     text-decoration-thickness: 2px;
 }
 
-nav
+.navbar
 {
     top: 0;
     position: fixed;
@@ -221,30 +221,6 @@ p .title2
         padding-top: 7%;
     }
 }
-
-/*trying to make the tables responsive*/
-
-/*@media (width < 1300px)*/
-/*{*/
-/*    th*/
-/*    {*/
-/*        display: none;*/
-/*    }*/
-/*    tr*/
-/*    {*/
-/*        display: block;*/
-/*    }*/
-/*    td*/
-/*    {*/
-
-/*        text-align: right;*/
-/*        display: block;*/
-/*    }*/
-/*    .fungiTableImg*/
-/*    {*/
-/*        width: 20%;*/
-/*    }*/
-/*}*/
 
 @media (width < 1000px){
     .content{

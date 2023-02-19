@@ -1,6 +1,6 @@
 *{
-  /*margin:0;*/
-  /*padding:0;*/
+  margin:0;
+  padding:0;
   font-family: 'Times New Roman', serif;
   box-sizing: border-box;
 }
@@ -12,7 +12,12 @@
   /*background-image: 2.jpg;
   background-position: center; */
   background-size: cover;
-  height: 100vh;
+
+  background: rgba(0,0,0, 15%);
+  min-height: 99.85vh; /*    one screen long fade at least - if the content is less than that its still applied*/
+
+  margin: 0;
+  padding: 0 0 1px 0;
 }
 
 .textbox{
@@ -66,31 +71,63 @@
 }
 
 
+
+/*navbar*/
+
+#selected
+{
+  text-decoration: underline;
+  text-decoration-color: rgb(173, 214, 9);;
+  text-decoration-thickness: 2px;
+}
+
+.navbar
+{
+  top: 0;
+  position: fixed;
+  background: #333333;
+  padding: 15px 0;
+  margin: 0 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+
 ul{
-  float: left;
-  display: flex;
-  align-items: center;
+
+  /*width: 60%;*/
+  margin: auto;
 
 }
 
 ul li{
   list-style: none;
-  margin-left: 75px;
-  margin-top: 27px;
-  font-size: 45px;
+  display: inline-block;
+  font-size: 32px;
+  margin: 5px 7px;
+
 }
 
 ul li a{
-  text-decoration: none;
+  text-decoration-line: none;
   color: rgb(255, 255, 255);
   font-family: Arial, serif;
   font-weight: bold;
   transition: 0.4s ease-in-out;
-  text-align: right;
+  text-align: center;
 }
 
 ul li a:hover{
   color: rgb(173, 214, 9);
+}
+
+.menu{
+  text-align: center;
+  align-self: auto;
+  width: 100%;
+  margin: auto;
+  /*float: left;*/
+  /*height: 10%;*/
 }
 
 body
@@ -105,15 +142,43 @@ body
 
 
 
-/*navbar*/
+/* RESPONSIVE kis képernyőkön:*/
 
-#selected
-{
-  text-decoration: underline;
-  text-decoration-color: rgb(173, 214, 9);;
-  text-decoration-thickness: 2px;
+@media (width < 1700px){
+  .content{
+    padding-top: 7%;
+  }
 }
 
+@media (width < 1000px){
+  .content{
+    padding-top: 10%;
+  }
+  ul li
+  {
+    font-size: 25px;
+  }
 
+  .content span
+  {
+    font-size: 70px;
+  }
+  .content .cont .title2
+  {
+    font-size: 40px;
+  }
 
+}
+
+@media (width < 750px){
+
+  ul li
+  {
+    font-size: 15px;
+  }
+  h3
+  {
+    font-size: 15px;
+  }
+}
   
