@@ -1,12 +1,15 @@
-/* body */
+/*háttér*/
+body{
+    background-image: url('../img/background/1.jpg');
+    width: 100%;
+    margin: 0;
+    padding: 0;
 
-body
-{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
 
+}
 
 /*navbar*/
 
@@ -17,19 +20,31 @@ body
     text-decoration-thickness: 2px;
 }
 
+.navbar
+{
+    top: 0;
+    position: fixed;
+    background: #333333;
+    padding: 15px 0;
+    margin: 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+
 
 ul{
-    float: left;
-    display: flex;
-    align-items: center;
+
+    /*width: 60%;*/
+    margin: auto;
 
 }
 
 ul li{
     list-style: none;
-    margin-left: 75px;
-    margin-top: 27px;
-    font-size: 45px;
+    display: inline-block;
+    font-size: 32px;
+    margin: 5px 7px;
+
 }
 
 ul li a{
@@ -38,7 +53,7 @@ ul li a{
     font-family: Arial, serif;
     font-weight: bold;
     transition: 0.4s ease-in-out;
-    text-align: right;
+    text-align: center;
 }
 
 ul li a:hover{
@@ -47,9 +62,11 @@ ul li a:hover{
 
 .menu{
     text-align: center;
-    width: 90%;
+    align-self: auto;
+    width: 100%;
+    margin: auto;
     /*float: left;*/
-    height: 20px;
+    /*height: 10%;*/
 }
 
 
@@ -60,44 +77,110 @@ ul li a:hover{
     /*background-image: 2.jpg;
     background-position: center; */
     background-size: cover;
-    height: 100vh;
+    margin: 0;
+    padding: 0 0 1px 0;
+
+    /* Making the background fade a bit - ik its terrible of a solution*/
+    background: rgba(0, 0, 0, 15%);
+    min-height: 99.85vh; /*    one screen long */
 }
 
 /* content */
 
-
 .content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
+    width: 80%;
+    /*    height: auto;*/
+    /*    margin: auto;*/
+    padding-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
     color: rgb(255, 255, 255);
-    position: relative;
-}
-
-.content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: Arial, serif;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.content h1{
-    font-family: 'Times New Roman', serif;
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
+    /*    position: relative;*/
 }
 
 
 .content span{
     color: rgb(173, 214, 9);
-    font-size: 100px
+    font-size: 90px;
 }
 
-/*scroll menüpontok között*/
 
-html {
-    scroll-behavior: smooth;
+
+.content .par{
+    font-family: Arial, serif;
+    letter-spacing: 1.2px;
+    /*line-height: 30px;*/
+}
+
+.content h1{
+    font-family: "Times New Roman", serif;
+    /*padding-left: 20px;*/
+    /*margin-top: 9%;*/
+    /*letter-spacing: 2px;*/
+    padding: 0;
+    margin: 0;
+}
+
+
+/* szöveg formazas */
+
+p
+{
+    font-size: large;
+}
+
+
+p .cont
+{
+    margin-top: 30px;
+    font-size: large;
+}
+p .title2
+{
+    font-size: xxx-large;
+    font-family: Arial, serif;
+
+}
+
+
+
+
+/* RESPONSIVE kis képernyőkön:*/
+
+@media (width < 1700px){
+    .content{
+        padding-top: 7%;
+    }
+}
+
+@media (width < 1000px){
+    .content{
+        padding-top: 10%;
+    }
+    ul li
+    {
+        font-size: 25px;
+    }
+
+    .content span
+    {
+        font-size: 70px;
+    }
+    .content .cont .title2
+    {
+        font-size: 40px;
+    }
+
+}
+
+@media (width < 750px){
+
+    ul li
+    {
+        font-size: 15px;
+    }
+    h3
+    {
+        font-size: 15px;
+    }
 }
