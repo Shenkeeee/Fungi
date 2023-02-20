@@ -2,3 +2,121 @@
 body{
     background-image: url('../img/background/1.jpg');
 }
+
+.content{
+    /*width: 1200px;*/
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman', serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+
+.content span{
+    color: rgb(173, 214, 9);
+    font-size: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* The Form Itself */
+
+/* Set a max width for the page content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the page header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the form labels */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Style the form inputs and textarea */
+form input[type=text],
+form input[type=email],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Style the form button */
+form button {
+    background-color: rgb(173, 214, 9);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the form button on hover */
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Style the page footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 600px) {
+    /* Make the page header and form container full width */
+    header {
+        width: 100%;
+    }
+    .container{
+        padding: 0 20px;
+    }
+
+    /* Reduce the padding on the form inputs */
+    form input[type=text],
+    form input[type=email],
+    form textarea {
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+
+    /* Reduce the font size of the form button */
+    form button {
+        font-size: 14px;
+    }
+}
