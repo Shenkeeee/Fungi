@@ -140,7 +140,7 @@ html {
     transform: translateZ(-1px) scale(2);
   }
   #slide1{
-    background-image: url('../img/background/5.jpeg');
+    background-image: url('../img/background/10.jpeg');
   }
   
   #slide2 {
@@ -151,53 +151,13 @@ html {
   }
   
   #slide3:before {
-    background-image: url('../img/background/1.jpg');
+    background-image: url('../img/background/10.jpeg');
     transform: translateZ(-1px) scale(2);
   }
   
   #slide4 {
     background: #222;
   }
-  
-  .container {
-      position: relative;
-      width: 50%;
-    }
-    
-    .image {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    
-    .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: #ffffff;
-    }
-    
-    .container:hover .overlay {
-      opacity: 1;
-    }
-    
-    .text {
-      color: rgb(0, 0, 0);
-      font-size: 20px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
   
   
     /*---------------------------------*/
@@ -253,11 +213,23 @@ html {
   }
   
   .containerhovi {
-    flex: 1;
+    flex:1;
     margin: 0 5px;
   }
   
+
+  /*
   .containerhovi.top {
-    margin-bottom: 20px; /* add a bottom margin to create space between the top and bottom rows */
+    margin-bottom: 25%;
+    flex: 0.2;
+    margin-left: 5%;
+     // add a bottom margin to create space between the top and bottom rows 
   }
+
+  .containerhovi.bottom {
+    flex: 1;
+    margin-bottom: -25%; // add a bottom margin to create space between the top and bottom rows
+  }
+
+  */
   
