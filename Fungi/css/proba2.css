@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+
 
 html {
   height: 100%;
@@ -32,6 +32,8 @@ p {
 	transform-style: inherit;
 }
 
+
+
 .slidetitle {
   position: relative;
   min-height: 100vh;
@@ -42,7 +44,7 @@ p {
 	transform-style: inherit;
 }
 
-img {
+.images {
   position: absolute;
   top: 50%;
   left: 35%;
@@ -55,9 +57,30 @@ img {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
+.images2 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+
+/*very weird problem so if i change this a második kép eltőnik akkor is ha új class de így meg el rotateeli a food képet 
+img:last-of-type 
+*/
+
+/*
 img:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
+*/
+
 
 .slide:before {
   content: "";
@@ -112,13 +135,16 @@ img:last-of-type {
 }
 
 #slide1:before {
-  background-image: url('../img/background/1.jpg');
+  background-color: rgb(0, 0, 0);
+  /*background-image: url('../img/background/1.jpg');*/
   transform: translateZ(-1px) scale(2);
 }
 
 #slide2 {
-  background-image: url('../img/background/1.jpg');
+  background-image: url('../img/background/9.jpg');
+  margin: 0;
   z-index:2;
+  padding: 0vh 0%;
 }
 
 #slide3:before {
@@ -128,4 +154,106 @@ img:last-of-type {
 
 #slide4 {
   background: #222;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  /*---------------------------------*/
+  /*Image*/
+
+  .containerhovi {
+    position: relative;
+    width: 100%;
+  }
+  
+  .imagehovi {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlayhovi {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+  }
+  
+  .containerhovi:hover .overlayhovi {
+    opacity: 1;
+  }
+  
+  .texthovi {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+ 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+/* 5 in one row foos...*/
+
+#slide2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerhovi {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.containerhovi.top {
+  margin-bottom: 20px; /* add a bottom margin to create space between the top and bottom rows */
 }
