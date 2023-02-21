@@ -135,7 +135,7 @@ img:last-of-type {
 }
 
 #slide1:before {
-  background-color: rgb(0, 0, 0);
+  background-image: url('../img/background/10.jpeg');
   /*background-image: url('../img/background/1.jpg');*/
   transform: translateZ(-1px) scale(2);
 }
