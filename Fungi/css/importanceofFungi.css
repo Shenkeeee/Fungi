@@ -140,6 +140,7 @@ html {
     transform: translateZ(-1px) scale(2);
   }
   #slide1{
+    
     background-image: url('../img/background/10.jpeg');
   }
   
