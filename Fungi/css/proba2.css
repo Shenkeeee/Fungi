@@ -148,7 +148,7 @@ img:last-of-type {
 }
 
 #slide3:before {
-  background-image: url('../img/background/1.jpg');
+  background-image: url('../img/background/10.jpeg');
   transform: translateZ(-1px) scale(2);
 }
 
