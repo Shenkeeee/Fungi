@@ -1,5 +1,9 @@
 /* hex háttér: #add609 */
 
+*::selection
+{
+    background-color: rgb(173, 214, 9);
+}
 
 /*háttér*/
 body{
@@ -104,52 +108,8 @@ ul li a:hover{
 .content span{
     color: rgb(173, 214, 9);
     font-size: 90px;
-    
-}
-
-
-/*
-
-.content .par{
-    font-family: Arial, serif;
-    letter-spacing: 1.2px;
-    
-}
-
-
-
-.content h1{
-    padding: 0;
-    margin: 0;
-}
-
-*/
-
-/* szöveg formazas */
-
-/*
-
-p
-{
-    font-size: large;
-}
-
-
-p .cont
-{
-    margin-top: 30px;
-    font-size: large;
-}
-p .title2
-{
-    font-size: xxx-large;
-    font-family: Arial, serif;
 
 }
-
-*/
-
-
 
 
 /* RESPONSIVE kis képernyőkön:*/

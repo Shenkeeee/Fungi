@@ -98,6 +98,22 @@ footer {
     padding: 20px;
 }
 
+fieldset
+{
+    border: none;
+}
+
+legend
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+button[type=reset]
+{
+    float: right;
+}
+
 /* Media queries for smaller screens */
 @media only screen and (max-width: 600px) {
     /* Make the page header and form container full width */
