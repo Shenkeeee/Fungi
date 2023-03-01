@@ -1,2 +1,3 @@
 # Fungi
-Webterv projekthez
+
+2023. Webtervezés tárgyhoz weboldal a gombákról.
