@@ -11,9 +11,7 @@ body{
 
 .divcont
 {
-    /*ez lenne jó arra hogy egy slidert csinál így responsive lenne a table
-    - prob: zoom + nemtetszik*/
-    /*overflow-x:auto;*/
+    overflow-x: visible;
 }
 
 
@@ -131,6 +129,23 @@ p .title2
     .content{
         padding-top: 7%;
     }
+
+}
+
+@media (width < 1500px){
+
+    /* table responsivity */
+    .divcont
+    {
+        overflow-x:auto;
+    }
+
+    .fungiTableImg:hover{
+        /*    ha az overflow x bennmarad vagyis a slider a responsivity ért*/
+        transform:  translateY(-30px) scale(2.3);
+
+    }
+
 }
 
 @media (width < 1000px){
@@ -150,6 +165,7 @@ p .title2
     {
         font-size: 40px;
     }
+
 
 }
 
