@@ -128,7 +128,7 @@ html {
   
   .header {
     text-align: left;
-    font-size: 70px;
+    font-size: 10vh;
     color: rgb(173, 214, 9);
     text-shadow: 0 2px 2px #000;
   }
