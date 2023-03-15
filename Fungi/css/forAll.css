@@ -151,3 +151,18 @@ ul li a:hover{
         font-size: 15px;
     }
 }
+
+
+   /* A weboldal nyomtatásakor érvényes formázások */
+
+   @media print {  
+    p { font-size: 12pt;}            /* bekezdések betűméretének megadása */
+    iframe, audio { display: none; }   /* videók, hangfájlok eltüntetése */
+    h1, h2, h3 { page-break-after: avoid; } /* címsorok utáni oldaltörés elkerülése */
+    *{color: black;}
+
+
+
+}
+  @page { margin: 0.9cm; }  /* nyomtatási margók megadása minden oldalra */
+
