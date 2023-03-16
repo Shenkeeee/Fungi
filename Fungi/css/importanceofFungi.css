@@ -57,8 +57,8 @@ html {
     position: absolute;
     top: 50%;
     left: 35%;
-    width: 320px;
-    height: 240px;
+    width: 25vw;
+    height: 25vw;
     transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
     padding: 10px;
     border-radius: 5px;
@@ -70,8 +70,8 @@ html {
     position: absolute;
     top: 50%;
     left: 35%;
-    width: 320px;
-    height: 240px;
+    width: 25vw;
+    height: 25vw;
     padding: 10px;
     border-radius: 5px;
     background: rgba(240,230,220, .7);
@@ -105,12 +105,17 @@ html {
   
   
   
+  
   .title {
-    width: 50%;
+    font-size: 1vw;
+    width: 35vw;
+    height: 20vw;
     padding: 5%;
     background: rgba(240,230,220, .7);
     box-shadow: 0 0 8px rgba(0, 0, 0, .7);
   }
+
+
   
   .slide:nth-child(2n+1) .title {
     margin-left: 0;
@@ -128,7 +133,7 @@ html {
   
   .header {
     text-align: left;
-    font-size: 10vh;
+    font-size: 5vw;
     color: rgb(173, 214, 9);
     text-shadow: 0 2px 2px #000;
   }
@@ -175,7 +180,7 @@ html {
   
     .containerhovi {
       position: relative;
-      width: 100%;
+ 
     }
     
     .imagehovi {
@@ -202,7 +207,7 @@ html {
     
     .texthovi {
       color: rgb(0, 0, 0);
-      font-size: 15px;
+      font-size: 1vw;
       position: relative;
       top: 50%;
       left: 50%;
