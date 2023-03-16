@@ -135,3 +135,16 @@ body{
   }
 
 /*   to style the tooltip text: */
+
+
+/*
+a[title]:hover:after {
+  content: attr(title);
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+}
+
+*/
