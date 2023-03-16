@@ -5,13 +5,15 @@ Megjegyzés: a loadingmush html és css, a proba2.html és css és a linerotatea
 A home oldal funkcionál index.html-ként, ott érdemes kezdeni.
 
 
-----------Általános szempontok: Max 45/ 53 -> 45/45 ------------------
+----------Általános szempontok ------------------
 
 - A HTML oldalak egységes dizájnnal készültek, minden oldal hasonló felépítésű és egységes dizájnt használ.
 Igen, szerintem az. Van hogy a háttér más de az alap színek ugyanazok és egységes a design.
 
+
 - Az elkészített weboldalak logikusan vannak felépítve, érthető, hogy mi hol található meg, mi hova tartozik.
 Érthető, hogy mi hova tartozik, mindenhol főcímek és 1-1 segítő szöveg tud segíteni abban hogy mi hol van. Minden jól el van különítve.
+
 
 - A weboldalak tartalma esztétikusan van elrendezve, a színek esztétikusan vannak kiválasztva.
 Illik ez a zöld design az erdőhöz, esztétikus az elrendezés és szinergikusak az oldalak.
@@ -57,7 +59,7 @@ typesofFungi.css 156. sor és 69. sor (     transform: scale(2.3);  transform:  
 - Az elkészített HTML oldalak mindegyike reszponzív
 Ezt @media (width < 1500px) és társai biztosítják Minden oldalon. A forAll.css minden dokumentumra vonatkozik, ott is ez biztosítja a reszponzivitást.
 
-----------Felhasznált elemek: Max 45/47 pont -> 45/45 pont ------------------
+----------Felhasznált elemek ------------------
 
 - A projekt tartalmaz legalább 1 űrlapot, amelynek van legalább 4 megfelelő módon felhasznált input mezője.
 ContactUs- on igen
@@ -147,7 +149,7 @@ importanceofFungi.css 156.sor, typesofFungi 156.sor
 
 
 -------------------------------
--> 45+45 -> 40+40 pont.
+
 
 
 2023. március 16. 
