@@ -101,21 +101,7 @@ body{
     
 }
 
-.collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-  }
-  
-  .active, .collapsible:hover {
-    background-color: #555;
-  }
+
   
   .websitecontent {
     padding: 0 18px;
@@ -149,13 +135,3 @@ body{
   }
 
 /*   to style the tooltip text: */
-
-a[title]:hover:after {
-  content: attr(title);
-  padding: 5px 10px;
-  color: #fff;
-  background-color: #000;
-  position: absolute;
-  z-index: 1;
-}
-
