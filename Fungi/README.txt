@@ -1,5 +1,9 @@
 
-Ez a README.txt sorolja fel az oldal funkcióit a webtervezés tárgyhoz, első mérföldkőre készült, Fungi témájú projektmunkához. Csapat: Német Tímea Kata - NOE3GB, és Subicz Máté István - JSGYYU. 
+Ez a README.txt sorolja fel az oldal funkcióit a webtervezés tárgyhoz, első mérföldkőre készült, Fungi témájú projektmunkához. Csapat: Német Tímea Kata - NOE3GB, és Subicz Máté István - JSGYYU.
+
+Megjegyzés: a loadingmush html és css, a proba2.html és css és a linerotateandshrink.css nem a kész projekt része.
+A home oldal funkcionál index.html-ként, ott érdemes kezdeni.
+
 
 ----------Általános szempontok: Max 45/ 53 -> 45/45 ------------------
 
