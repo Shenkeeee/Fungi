@@ -20,7 +20,9 @@ html {
     transform-style: preserve-3d;
     margin:0;
     padding:0;
-    height: 99%;
+
+    /* 100al mar 2 scrollbar lesz */
+    height: 99.9%; 
     overflow-x: hidden;
     overflow-y: scroll;
   }
