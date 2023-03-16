@@ -132,7 +132,7 @@ body{
 
     
     padding: 5px;
-    background-color: rgb(255,255,255,0.8);
+    background-color: rgb(255,255,255);
     margin: 5px;
     
   }
@@ -142,8 +142,20 @@ body{
     position: relative;
 
     vertical-align: middle;
-    color: #add609;
+    color: #7a960c;
     
     
     
   }
+
+/*   to style the tooltip text: */
+
+a[title]:hover:after {
+  content: attr(title);
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+}
+
