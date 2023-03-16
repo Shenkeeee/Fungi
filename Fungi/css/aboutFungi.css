@@ -45,6 +45,12 @@
   float: clear;
 }
 
+footer
+{
+  position: fixed; 
+  /* a gorgető animacio miatt ezen az oldalon nem absolute */
+}
+
 
 
 .slides img{

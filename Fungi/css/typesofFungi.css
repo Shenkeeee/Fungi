@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
     
+    
 }
 
 
@@ -113,11 +114,21 @@ p .cont
     margin-top: 30px;
     font-size: large;
 }
-p .title2
+.title2
 {
-    font-size: xxx-large;
+    color: rgb(173, 214, 9);
+    font-size: 4vh;
     font-family: Arial, serif;
 
+}
+
+.title2::after
+{
+    margin: 5%;
+}
+.title2::before
+{
+    margin: 5%;
 }
 
 

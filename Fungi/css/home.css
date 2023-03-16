@@ -6,9 +6,16 @@ body
      background-image: url('../img/background/1.jpg');
      /*background-repeat: no-repeat;*/
      /*background-attachment: fixed;*/
+    
      /*background-size: cover;*/
 }
 
 h1 ,h2{
   text-shadow: 2px 5px 5px black;
+}
+
+footer
+{
+  position: absolute;
+  overflow: hidden;
 }
