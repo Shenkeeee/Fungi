@@ -21,3 +21,129 @@ body{
     height: 100%;
 }
 
+.containerhovi {
+    /*if you take this out everything crashes... so dont ty*/
+
+    position: relative;
+  
+    width: 100%;
+    height: 100%;
+    
+    
+    
+
+  }
+  
+  .imagehovi {
+    width: 100%;
+    height: 100%;
+
+   
+    
+   
+  }
+  
+  .overlayhovi {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffff;
+    
+   
+  }
+  
+  .containerhovi:hover .overlayhovi {
+    opacity: 1;
+  }
+  
+  .texthovi {
+    color: rgb(0, 0, 0);
+    font-size: 1vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+   
+    
+ 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+/* 5 in one row foos...*/
+
+.resourcediv{
+    flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.title{
+    font-size: 5vw;
+    margin-top: 5%;
+    color: #add609;
+    
+}
+
+.youtube{
+    
+    flex:0.2;
+    
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .websitecontent {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    
+  }
+
+  .website{
+    
+    
+
+    
+    padding: 5px;
+    background-color: rgb(255,255,255,0.8);
+    margin: 5px;
+    
+  }
+  .websitetext{
+    font-size: 5vh;
+    
+    position: relative;
+
+    vertical-align: middle;
+    color: #add609;
+    
+    
+    
+  }
