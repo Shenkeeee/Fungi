@@ -247,4 +247,12 @@ html {
   }
 
   */
+li{
+  color: white;
+}
+
+
+  li ::first-line{
+    color: rgb(173, 214, 9);;
+  }
   
