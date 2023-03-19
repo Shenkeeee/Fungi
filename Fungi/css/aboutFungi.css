@@ -68,6 +68,14 @@ body
   background-image: url('../img/background/4.png');
 }
 
+video{
+  position: absolute;
+  top: 20%;
+  right:10%;
+  border-radius: 20px 20px;
+  
+}
+
 
 
    
