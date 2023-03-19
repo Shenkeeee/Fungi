@@ -136,29 +136,25 @@ button[type=reset]:active
     }
 }
 
-button[type=submit]:active
+button[type=submit]
 {
-    animation: shake 0.7s;
-    transition: all 0.5s;
+    animation-name: valtakozo_hatterszin;   /* animáció hozzárendelése az elemhez */
+    animation-duration: 2s;                /* animáció hossza */
+    animation-timing-function: linear;      /* animáció időbeli lefolyása */
+    animation-iteration-count: infinite;    /* animáció lejátszásának száma */
+    animation-direction: alternate;         /* animáció iránya */
+   
 
 }
 
 @keyframes shake
 {
-    10%, 50%
-    {
-        transform: translateX(5%);
-    }
-    
-    20%, 40%
-    {
-        transform: translateX(-5%);
-    }
-    
-    30%
-    {
-        transform: translateX(5%);
-    }
+    0% { transform: translateX(0); }
+  10%, 90% { transform: translateX(-5px); }
+  20%, 80% { transform: translateX(5px); }
+  30%, 50%, 70% { transform: translateX(-5px); }
+  40%, 60% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
 }
 
 /* Media queries for smaller screens */
@@ -184,3 +180,10 @@ button[type=submit]:active
         font-size: 14px;
     }
 }
+
+@keyframes valtakozo_hatterszin {   
+          /* egy animáció létrehozása */
+    0% { background-color: rgb(101, 124, 10) }
+    100% { background-color: rgb(173, 214, 9) }
+  }
+
