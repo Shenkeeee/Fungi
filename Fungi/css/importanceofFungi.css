@@ -247,12 +247,16 @@ html {
   }
 
   */
-li{
-  color: white;
+
+  li{
+    color: white;
+    font-size: 1.8vw;
+  }
+
+
+strong{
+  color: rgb(173, 214, 9);
 }
 
 
-  li ::first-line{
-    color: rgb(173, 214, 9);;
-  }
   
