@@ -47,7 +47,7 @@ aboutFungi.css 14.sor (  animation: slide-up 2s; )
 
 Bár megjelenéshez csak egy elem van, több más animáció miatt dinamikus az oldal
 
-Submit gomb váltja a színét
+Animation: Submit gomb váltja a színét
 
 - Egyéb, igényesen elkészített animáció (elemekre, háttérre stb.).
 
@@ -60,6 +60,7 @@ typesofFungi.css 156. sor és 69. sor (     transform: scale(2.3);  transform:  
 
 - Az elkészített HTML oldalak mindegyike reszponzív
 Ezt @media (width < 1500px) és társai biztosítják Minden oldalon. A forAll.css minden dokumentumra vonatkozik, ott is ez biztosítja a reszponzivitást.
+
 
 ----------Felhasznált elemek ------------------
 
@@ -120,6 +121,7 @@ contactUs.css -ben 117.sor float
 
 - Van olyan HTML oldal, amelyhez tartozik igényesen elkészített nyomtatási stíluslap.
 Mindhez csináltunk, megvalósítva a forAll.css 170. sorában van (@media print)
+Az about fungira csináltuk meg külön
 
 - Minden HTML oldalhoz van igényesen elkészített nyomtatási stíluslap.
 Mindhez csináltunk, megvalósítva a forAll.css 170. sorában van (@media print)
