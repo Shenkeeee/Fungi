@@ -1,8 +1,8 @@
 
 Ez a README.txt sorolja fel az oldal funkcióit a webtervezés tárgyhoz, első mérföldkőre készült, Fungi témájú projektmunkához. Csapat: Német Tímea Kata - NOE3GB, és Subicz Máté István - JSGYYU.
 
-Megjegyzés: a loadingmush html és css, a proba2.html és css és a linerotateandshrink.css nem a kész projekt része.
 A home oldal funkcionál index.html-ként, ott érdemes kezdeni.
+A javított részeket csillaggal jeleztem.
 
 
 ----------Általános szempontok ------------------
@@ -25,7 +25,7 @@ Igen, Olyan hátterek és betűszín kombóra törekedtünk, hogy jól olvashat�
 Igen, mindenhez oda van írva, hogy mi hova tartozik. 
 
 - Az oldal rendelkezik böngészőfülön megjelenő ikonnal.
-Igen
+*Igen, javítva
 
 - Az weboldalak igényesen vannak elkészítve, modernnek néznek ki.
 Modern az elrendezés, igényesen vannak elkészítve, kis animációkkal fűszerezve, reszponzívak, stb. (az alap design ötlet a https://www.forestapp.cc/ -n alapult)
@@ -49,7 +49,7 @@ Bár megjelenéshez csak egy elem van, több más animáció miatt dinamikus az 
 
 - Egyéb, igényesen elkészített animáció (elemekre, háttérre stb.).
 
-contactUs.css 124 és 140. sor (  animation: up 0.15s;  animation: shake 0.7s; )
+*contactUs.css 124 és 140. sor (  animation: up 0.15s;  animation: shake 0.7s; )
 
 - Az oldalon lévő egyes elemek (ahol indokolt) a kurzorral interakcióba lépnek (pl. a gombok, kártyák esetén).
 typesofFungi.css 156. sor és 69. sor (     transform: scale(2.3);  transform:  translateY(-30px) scale(2.3); )
@@ -79,6 +79,15 @@ Igen, contacts
 - A weboldal HTML5 elemek megfelelő használatával van kialakítva (header, footer, nav, aside, main, section, article). (Ezek mindegyike 1 pont, elérhető max. 3 pont.)
 Header Footer és Nav van minden oldalon. A nav css-e a forAll.css ben van. Van amelyiken main vagy section is de inkább divekkel és classokkal oldottuk meg. 
 
+- A projekt tartalmaz legalább 1 táblázatot.
+typesban
+
+- Van olyan táblázat, amelynek van fejléce, ami másképpen jelenik meg.
+typesban oldalt
+
+- Van olyan táblázat, amely használ headers attribútumot megfelelő módon.
+nem
+
 - A projekt tartalmaz legalább 1 CSS fájlt, és az fel is van használva.
 Igen
 
@@ -105,7 +114,7 @@ aboutFungi.css - ben 45.sor clear
 contactUs.css -ben 117.sor float
 
 - Pseudo-elemek használata (before, after, selection, first-letter, first-line stb.). (Ezek mindegyike 1 pont, elérhető max. 2 pont).
-importanceofFungi.css ben before 96. sor, forAll.css-ben selection 3. sor, typesofFungi.css- ben after 125. sor
+*importanceofFungi.css ben before 96. sor, és még 4 helyen, forAll.css-ben selection 3. sor, typesofFungi.css- ben after 125. sor
 
 - Van olyan HTML oldal, amelyhez tartozik igényesen elkészített nyomtatási stíluslap.
 Mindhez csináltunk, megvalósítva a forAll.css 170. sorában van (@media print)
@@ -117,10 +126,13 @@ Mindhez csináltunk, megvalósítva a forAll.css 170. sorában van (@media print
 hang az aboutFungi-n, videó az importance-n
 
 - Vannak strukturális elemek céljuknak megfelelően használva (pl. címsorok, bekezdések, iframe, strong, em, blockquote, q, code, sub, sup, mark, hr, pre stb.). (Ezek mindegyike 1 pont, elérhető max. 4 pont).
-learningAndResources.html 40.sor iframe, div kb mindenhol. Nagyrészt classokkal oldottuk meg, én egy 3 pontot adtam
+learningAndResources.html 40.sor iframe, div kb mindenhol.
+*strong: importanceofFungi.html 94. sor
+*q: home.html 32. sor
 
 - Listák használata.
 navbar egy lista. Több lista is van használva, csak nagyrészt nem a hagyományos ul és ol-al.
+*importanceofFungi.html 93. sor
 
 - Flexbox vagy grid használata.
 importanceofFungi.css ben
