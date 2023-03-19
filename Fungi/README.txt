@@ -45,7 +45,9 @@ Minden oldalon meg van valósítva a sticky navbar igen
 - Az oldal tartalma animálva jelenik meg (pl. az egyes elemek beúsznak, fokozatosan jelennek meg stb.).
 aboutFungi.css 14.sor (  animation: slide-up 2s; )
 
-Bár megjelenéshez csak egy elem van, több más animáció miatt dinamikus az oldal, emiatt érdemeljük meg a 6 pontot, de én 3-al számoltam a pontunkat
+Bár megjelenéshez csak egy elem van, több más animáció miatt dinamikus az oldal
+
+Submit gomb váltja a színét
 
 - Egyéb, igényesen elkészített animáció (elemekre, háttérre stb.).
 
@@ -120,7 +122,7 @@ contactUs.css -ben 117.sor float
 Mindhez csináltunk, megvalósítva a forAll.css 170. sorában van (@media print)
 
 - Minden HTML oldalhoz van igényesen elkészített nyomtatási stíluslap.
-Mindhez csináltunk, megvalósítva a forAll.css 170. sorában van (@media print) -> nem tudom mennyire igényes úgyhogy ezt nem számoltam a max ponthoz
+Mindhez csináltunk, megvalósítva a forAll.css 170. sorában van (@media print)
 
 - A projekt tartalmaz multimédiás elemeket (hang- és videóállomány).
 hang az aboutFungi-n, videó az importance-n

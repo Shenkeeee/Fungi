@@ -169,7 +169,7 @@ ul li a:hover{
 
    @media print {  
     p { font-size: 12pt;}            /* bekezdések betűméretének megadása */
-    iframe, audio { display: none; }   /* videók, hangfájlok eltüntetése */
+    iframe, audio, video { display: none; }   /* videók, hangfájlok eltüntetése */
     h1, h2, h3 { page-break-after: avoid; } /* címsorok utáni oldaltörés elkerülése */
     *{color: black;}
 
