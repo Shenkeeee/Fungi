@@ -23,3 +23,8 @@ footer
 q{
   position: absolute; bottom: 6%; right: 2%; font-size: 3vh; background-color: rgba(20, 20, 20, 0.6); padding: 5px; border-radius: 5px;
 }
+
+.navbar
+{
+    background: none;
+}
