@@ -33,7 +33,7 @@
             <header><h1><span>Register</span></h1></header>
 
         <main>
-            <form action="../php/tools/registerNew.php" method="GET">
+            <form action="../php/tools/registerNew.php" method="POST">
                 <fieldset>
                 <legend> Join us!</legend>
                     <label for="name">Username:*</label>

@@ -2,10 +2,10 @@
 
 $uzenet = "";
 
-$name = $_GET["name"];
-$password = $_GET["password"];
-$confpassword = $_GET["confpassword"];
-$email = $_GET["email"];
+$name = $_POST["name"];
+$password = $_POST["password"];
+$confpassword = $_POST["confpassword"];
+$email = $_POST["email"];
 
 if(isset($name) && isset($password) && isset($confpassword) && isset($email) && trim($_GET["name"] !== "") && trim($_GET["password"] !== "") && trim($_GET["email"] !== "") && trim($_GET["confpassword"] !== ""))
 {
