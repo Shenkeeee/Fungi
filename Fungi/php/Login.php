@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact us</title>
+    <title>Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/forAll.css">
     <link rel="stylesheet" href="../css/contactUs.css">
@@ -13,32 +13,27 @@
 <div class="main">
 
     <?php
-    $page = "contact";
+    $page = "login";
     include_once "../php/tools/navbar.php";
     ?>
 
     <div class="content">
         <div class="container">
 
-            <header><h1><span>Contact us</span></h1></header>
+            <header><h1><span>Login</span></h1></header>
 
         <main>
             <form>
                 <fieldset>
-                <legend> Contact us here!</legend>
-                    <label for="name">Name:*</label>
+                <legend> Welcome back! </legend>
+                    <label for="name">Userame:*</label>
                     <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:*</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="password">Password:*</label>
+                    <input type="password" id="password" name="password" required>
 
-                    <label for="subject">Subject:*</label>
-                <input type="text" id="subject" name="subject" required>
 
-                <label for="message">Message:*</label>
-                <textarea id="message" name="message" rows="8" required></textarea>
-
-                <button type="submit">Send Message</button>
+                <button type="submit">Login</button>
                 <button type="reset">Reset</button>
                 </fieldset>
 
@@ -50,7 +45,7 @@
     </div>
 </div>
 
-<footer>
+<footer style="position: absolute">
     Thanks for your interest!
 </footer>
 

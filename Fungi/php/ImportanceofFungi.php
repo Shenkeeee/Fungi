@@ -12,8 +12,8 @@
 <body>
 
 <?php
-$page = "importance";
-include_once "../php/navbar.php";
+    $page = "importance";
+    include_once "../php/tools/navbar.php";
 ?>
 
 

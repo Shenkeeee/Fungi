@@ -43,8 +43,7 @@ body{
 /* Set a max width for the page content */
 .container {
     max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 10%;
+    margin: 0 auto 10%;
 }
 
 /* Style the page header */
@@ -71,6 +70,7 @@ form label {
 /* Style the form inputs and textarea */
 form input[type=text],
 form input[type=email],
+form input[type=password],
 form textarea {
     width: 100%;
     padding: 12px;

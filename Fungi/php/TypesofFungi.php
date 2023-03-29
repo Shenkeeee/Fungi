@@ -16,7 +16,7 @@
 
     <?php
     $page = "types";
-    include_once "../php/navbar.php";
+    include_once "../php/tools/navbar.php";
     ?>
 
     <div class="content">

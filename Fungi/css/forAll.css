@@ -51,9 +51,21 @@ footer{
     z-index: 10;
 
     text-align: center;
-    align-self: auto;
     /*float: left;*/
     /*height: 10%;*/
+}
+
+.navbarReg
+{
+    top: 0;
+    position: fixed;
+    padding: 15px 0;
+    margin: 0 0;
+    right: 0;
+    overflow: hidden;
+
+    /*feljebb van és nincs háttere*/
+    z-index: 11;
 }
 
 

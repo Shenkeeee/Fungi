@@ -15,7 +15,7 @@
 <div class="main" style="background: none">
     <?php
     $page = "home";
-    include_once "../php/navbar.php";
+    include_once "../php/tools/navbar.php";
     ?>
     <div class="content">
 
