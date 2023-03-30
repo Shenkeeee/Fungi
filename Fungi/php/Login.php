@@ -23,7 +23,7 @@
             <header><h1><span>Login</span></h1></header>
 
         <main>
-            <form>
+            <form action="./tools/loginScript.php" method="POST">
                 <fieldset>
                 <legend> Welcome back! </legend>
                     <label for="name">Userame:*</label>
@@ -44,10 +44,6 @@
     </div>
     </div>
 </div>
-
-<footer style="position: absolute">
-    Thanks for your interest!
-</footer>
 
 </body>
 </html>

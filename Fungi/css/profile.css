@@ -1,0 +1,5 @@
+/*háttér*/
+body{
+    background-image: url('../img/background/1.jpg');
+    overflow-x: hidden;
+}

@@ -12,24 +12,25 @@ if(isset($name) && isset($password) && isset($confpassword) && isset($email) && 
     if ($password === $confpassword)
     {
 //        letezik mar ilyen felh vagy nem?
+        //TODO
 
         $hashedPass = password_hash($password,PASSWORD_DEFAULT);
 
         //register
+        //TODO
 
-
-        $uzenet= "DUN";
+        $uzenet= "Registration done.";
         header("Location: ../register.php?uzenet=" . urlencode($uzenet));
 
     }
 
     else{
-        $uzenet= "Exuse me but the two passwords are not the same. ";
+        $uzenet= "The two passwords are not the same.";
         header("Location: ../register.php?uzenet=" . urlencode($uzenet));
     }
 }
 
 else{
-    $uzenet="go fill your data pls";
+    $uzenet="Fill all of the fields.";
     header("Location: ../register.php?uzenet=" . urlencode($uzenet));
 }

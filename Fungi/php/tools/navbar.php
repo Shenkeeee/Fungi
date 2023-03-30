@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +9,17 @@
 <body>
 
 <nav class="navbarReg" >
+    <?php if(!isset($_SESSION["user"])) { ?>
     <ul>
         <li style="float: right"><a href="../php/Login.php" <?php if($page === "login") { echo 'id="selected"'; } ?>>Login</a></li>
         <li><a href="../php/Register.php" <?php if($page === "register") { echo 'id="selected"'; } ?>>Register</a></li>
     </ul>
+    <?php } else { ?>
+        <ul>
+            <li style="float: right"><a href="../php/tools/signOutScript.php">Sign Out</a></li>
+            <li><a href="../php/Profile.php" <?php if($page === "profile") { echo 'id="selected"'; } ?>>Profile</a></li>
+        </ul>
+    <?php } ?>
 </nav>
 
 <!-- itt csináljuk a menüsort hogy ne kelljen mindenhol-->
@@ -28,4 +37,4 @@
 </nav>
 
 </body>
-</html>-
+</html>

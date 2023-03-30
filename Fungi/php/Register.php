@@ -16,7 +16,6 @@
 //    form alá szöveg
     if (isset($_GET['uzenet'])) {
         $uzenet = $_GET['uzenet'];
-
     }
     else{
         $uzenet = "";
@@ -61,10 +60,6 @@
     </div>
     </div>
 </div>
-
-<footer style="position: absolute">
-    Thanks for your interest!
-</footer>
 
 </body>
 </html>
