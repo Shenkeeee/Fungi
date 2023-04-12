@@ -19,19 +19,35 @@ if(isset($name) && isset($password) && isset($confpassword) && isset($email) && 
         $users = mysqli_query($conn, $sql);
         while($row = mysqli_fetch_array($users,MYSQLI_ASSOC))
         {
-            
-            if($row["name"] === $name || $row["email"] === $email)
+            echo $row["name"];
+            if($row["name"] === $name)
             {
-                $uzenet= "There is someone with the same username or email.";
+                $uzenet= "There is someone with the same username.";
                 header("Location: ../register.php?uzenet=" . urlencode($uzenet));
+            }
+
+            if($row["email"] === $email)
+            {
+                if($uzenet === "")
+                {   
+                    $uzenet= "There is someone with the same email.";
+                    header("Location: ../register.php?uzenet=" . urlencode($uzenet));
+                }
             }
         }
 
-        $sql = "INSERT INTO users (username, email, password) VALUES($name, $email, $password)";
+        // if there was no mistake with the sql
+        if($uzenet === "")
+        {
+            // adding user to sql
+            $stmt = $conn->prepare("INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, 'user')");
+            $stmt->bind_param("sss", $name, $email, $password);
+            $stmt->execute();
 
-        $uzenet= "Registration done.";
-        header("Location: ../register.php?uzenet=" . urlencode($uzenet));
-
+            $uzenet= "Registration done.";
+            header("Location: ../register.php?uzenet=" . urlencode($uzenet));    
+        }
+        
     }
 
     else{

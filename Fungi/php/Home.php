@@ -39,7 +39,9 @@
             <h2 class="par"> <?php echo  "$uzenet"  ?>  </h2>
         <?php } else{ ?>
 <!--                ha belépett -->
-            <h2 class="par"> Welcome!</h2>
+        <h2 class="par"> Welcome <?php echo $_SESSION["user"]; ?>!</h2>
+        <?php $uzenet=""; ?> 
+
         <?php } ?>
     </div>
 </div>

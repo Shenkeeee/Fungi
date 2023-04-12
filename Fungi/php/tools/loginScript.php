@@ -8,25 +8,39 @@ $pass = $_POST["password"];
 
 $uzenet = "";
 
-if(!isset($name) || !isset($password))
+if(!isset($name) || !isset($pass))
 {
     $uzenet = "Please fill your data!";
-    // header("location: ../Login.php?uzenet=" . urlencode($uzenet) );
+    header("location: ../Login.php?uzenet=" . urlencode($uzenet) );
 }
-// header("location: ./connect.php?uzenet=" . urlencode($uzenet) );
 
 
-$sql = "SELECT * FROM users WHERE username='$name'";
+$sql = "SELECT * FROM users";
 $users = mysqli_query($conn, $sql);
 
 while($row = mysqli_fetch_array($users, MYSQLI_ASSOC))
 {
     if($row["name"] === $name)
     {
-        $_SESSION["user"] = "$name";
-        header("location: ../Home.php");
+        if($row["password"] === $pass)
+        {
+            $_SESSION["user"] = "$name";
+            header("location: ../Home.php");    
+        }
+        else
+        {
+            if($uzenet=== "")
+            {
+                $uzenet = "Incorrect password.";
+                header("location: ../Login.php?uzenet=".urlencode($uzenet));
+            }
+        }
+        
     }
 }
-
-
-echo "xd";
+if($uzenet=== "")
+{
+    $uzenet = "Incorrect username.";
+    header("location: ../Login.php?uzenet=".urlencode($uzenet));
+}
+echo $uzenet;

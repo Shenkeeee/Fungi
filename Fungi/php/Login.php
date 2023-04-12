@@ -13,6 +13,14 @@
 <div class="main">
 
     <?php
+
+    if (isset($_GET['uzenet'])) {
+        $uzenet = $_GET['uzenet'];
+    }
+    else{
+        $uzenet = "";
+    }
+
     $page = "login";
     include_once "../php/tools/navbar.php";
     ?>
@@ -38,6 +46,7 @@
                 </fieldset>
 
             </form>
+            <?php echo "<p>". $uzenet . "</p>"; ?>
         </main>
 
 
