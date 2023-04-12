@@ -13,8 +13,6 @@ if(isset($name) && isset($password) && isset($confpassword) && isset($email) && 
 {
     if ($password === $confpassword)
     {
-
-      
         $hashedPass = password_hash($password,PASSWORD_DEFAULT);
 
         $sql = "SELECT * from users";
