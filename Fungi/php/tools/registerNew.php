@@ -1,5 +1,7 @@
 <?php
 
+require_once "./connect.php";
+
 $uzenet = "";
 
 $name = $_POST["name"];
@@ -11,13 +13,23 @@ if(isset($name) && isset($password) && isset($confpassword) && isset($email) && 
 {
     if ($password === $confpassword)
     {
-//        letezik mar ilyen felh vagy nem?
-        //TODO
 
+      
         $hashedPass = password_hash($password,PASSWORD_DEFAULT);
 
-        //register
-        //TODO
+        $sql = "SELECT * from users";
+        $users = mysqli_query($conn, $sql);
+        while($row = mysqli_fetch_array($users,MYSQLI_ASSOC))
+        {
+            
+            if($row["name"] === $name || $row["email"] === $email)
+            {
+                $uzenet= "There is someone with the same username or email.";
+                header("Location: ../register.php?uzenet=" . urlencode($uzenet));
+            }
+        }
+
+        $sql = "INSERT INTO users (username, email, password) VALUES($name, $email, $password)";
 
         $uzenet= "Registration done.";
         header("Location: ../register.php?uzenet=" . urlencode($uzenet));
