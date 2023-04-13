@@ -64,8 +64,16 @@ if (!isset($_SESSION["user"])) {
                     // admin privileges
                     if($_SESSION["role"] === "admin")
                     {
-                        echo '<td> <Button> Change Role </Button> </td>';
+
+                        // echo '<td> <Button> Change Role </Button> </td>';
                         ?>
+                            <td>
+                                <form action="./tools/changeRole.php" method="POST">
+                                    <input type="hidden" name="changeableName" value="<?= $row["name"] ?>">
+                                    <button type="submit">Change Role</button>
+                                </form>
+                            </td>
+
                             <td>
                                 <form action="./tools/delete.php" method="POST">
                                     <input type="hidden" name="deletableName" value="<?= $row["name"] ?>">
