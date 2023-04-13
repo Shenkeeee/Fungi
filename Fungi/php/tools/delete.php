@@ -1,18 +1,19 @@
 <?php
 
-// require_once "./connect.php";
+require_once "./connect.php";
 
-// $deletableName = $_POST["name"];
+$deletableName = mysqli_real_escape_string($conn, $_POST["deletableName"]);
 
-// $sql = "DELETE FROM users where name = $deletableName";
-// $users = mysqli_query($conn, $sql);
+$stmt = $conn->prepare("DELETE FROM users WHERE name = ?");
+$stmt->bind_param("s",$deletableName);
 
-// while ($row = mysqli_fetch_array($users, MYSQLI_ASSOC))
-// {
-//     if($row["name"] === $deletableName)
-//     {
-//         echo $row["ID"] . "is the ID we are looking for";
-//     }
-// }
-
+if($stmt->execute())
+{
+    $uzenet = "User $deletableName was deleted.";
+    header("Location: ../home.php?uzenet=" . urlencode($uzenet));
+}
+else{
+    $uzenet = "Error deleting user $deletableName.";
+    header("Location: ../home.php?uzenet=" . urlencode($uzenet));
+}
 ?>

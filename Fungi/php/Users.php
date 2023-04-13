@@ -29,11 +29,9 @@ if (!isset($_SESSION["user"])) {
 
     <div class="content">
         <div class="container">
-
             <header><h1><span>Users</span></h1></header>
         <main>
             <h2> List of users </h2>
-
             <table>
                 <tr>
                 <th>Username</th>
@@ -67,19 +65,23 @@ if (!isset($_SESSION["user"])) {
                     if($_SESSION["role"] === "admin")
                     {
                         echo '<td> <Button> Change Role </Button> </td>';
-                        echo '<td> <Button> Delete User </Button> </td>';
+                        ?>
+                            <td>
+                                <form action="./tools/delete.php" method="POST">
+                                    <input type="hidden" name="deletableName" value="<?= $row["name"] ?>">
+                                    <button type="submit">Delete User</button>
+                                </form>
+                            </td>
+                        <?php
+                        
                     }
                 }
 
                 echo '</tr>';
             }
-            
             ?>
-
             </table>
-
         </main>
-
     </div>
     </div>
 </div>
