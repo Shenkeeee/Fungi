@@ -22,6 +22,14 @@
     <?php } ?>
 </nav>
 
+<nav class="navbarLeft";>
+    <?php if(isset($_SESSION["user"])) { ?>
+        <ul  width="200px">
+            <li><a href="../php/Users.php" <?php if($page === "users") { echo 'id="selected"'; } ?>>Users</a></li>
+        </ul>
+        <?php } ?>
+</nav>
+
 <!-- itt csináljuk a menüsort hogy ne kelljen mindenhol-->
 <nav class="navbar">
     <ul>

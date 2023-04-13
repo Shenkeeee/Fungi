@@ -25,6 +25,8 @@ while($row = mysqli_fetch_array($users, MYSQLI_ASSOC))
         if($row["password"] === $pass)
         {
             $_SESSION["user"] = "$name";
+            // ??
+            $_SESSION["role"] = $row["role"];
             header("location: ../Home.php");    
         }
         else

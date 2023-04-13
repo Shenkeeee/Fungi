@@ -68,6 +68,18 @@ footer{
     z-index: 11;
 }
 
+.navbarLeft
+{
+    top: 0;
+    position: fixed;
+    padding: 15px 0;
+    margin: 0 0;
+    left: 0;
+    overflow: hidden;
+
+    /*feljebb van és nincs háttere*/
+    z-index: 11;
+}
 
 ul{
 
