@@ -41,7 +41,7 @@ if(isset($name) && isset($password) && isset($confpassword) && isset($email) && 
         {
             // adding user to sql
             $stmt = $conn->prepare("INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, 'user')");
-            $stmt->bind_param("sss", $name, $email, $password);
+            $stmt->bind_param("sss", $name, $email, $hashedPass);
             $stmt->execute();
 
             $uzenet= "Registration done.";

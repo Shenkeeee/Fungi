@@ -22,10 +22,10 @@ while($row = mysqli_fetch_array($users, MYSQLI_ASSOC))
 {
     if($row["name"] === $name)
     {
-        if($row["password"] === $pass)
+        // we also check the unhashed cuz of first regs
+        if(password_verify($pass,$row["password"]) || $row["password"] === $pass )
         {
             $_SESSION["user"] = "$name";
-            // ??
             $_SESSION["role"] = $row["role"];
             header("location: ../Home.php");    
         }
