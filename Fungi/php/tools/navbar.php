@@ -1,4 +1,9 @@
-<?php session_start(); ?>
+<?php 
+    if(!isset($_SESSION["user"]))
+    {
+        session_start();
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,11 +28,11 @@
 </nav>
 
 <nav class="navbarLeft";>
-    <?php if(isset($_SESSION["user"])) { ?>
+    
         <ul  width="200px">
-            <li><a href="../php/Users.php" <?php if($page === "users") { echo 'id="selected"'; } ?>>Users</a></li>
+            <li><a <?php if(isset($_SESSION["user"])) { ?> href="../php/Users.php" <?php } else { ?> href="../php/Login.php" <?php } if($page === "users") { echo 'id="selected"'; } ?>>Users</a></li>
         </ul>
-        <?php } ?>
+       
 </nav>
 
 <!-- itt csináljuk a menüsort hogy ne kelljen mindenhol-->

@@ -77,6 +77,7 @@ if (!isset($_SESSION["user"])) {
                             <td>
                                 <form action="./tools/delete.php" method="POST">
                                     <input type="hidden" name="deletableName" value="<?= $row["name"] ?>">
+                                    <input type="hidden" name="deletableNameSelf" value="<?= $_SESSION["user"] ?>">
                                     <button type="submit">Delete User</button>
                                 </form>
                             </td>

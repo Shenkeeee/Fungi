@@ -3,3 +3,17 @@ body{
     background-image: url('../img/background/1.jpg');
     overflow-x: hidden;
 }
+
+button {
+    background-color: rgb(173, 214, 9);
+    color: white;
+    padding: 20px 60px;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

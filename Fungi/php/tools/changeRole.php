@@ -28,11 +28,11 @@ $stmt->bind_param("s",$changeableName);
 
 if($stmt->execute())
 {
-    $uzenet = "User " . $changeableName ."'s privilege changed to " . $privilegeNew .".";
+    $uzenet = "User " . $changeableName ."'s role changed to " . $privilegeNew .".";
     header("Location: ../home.php?uzenet=" . urlencode($uzenet));
 }
 else{
     
-    $uzenet = "User " . $changeableName ."'s privilege " . $privilegeNew ." failed to be set.";
+    $uzenet = "User " . $changeableName ."'s role " . $privilegeNew ." failed to be set.";
     header("Location: ../home.php?uzenet=" . urlencode($uzenet));
 }
