@@ -16,8 +16,11 @@ if($stmt->execute())
         session_start();
         session_unset();
         session_destroy();        
+        $uzenet = "You have succesfully deleted your profile.";        
     }
-    $uzenet = "User " . $deletableName . " was deleted. ";        
+    else{
+        $uzenet = "User " . $deletableName . " was deleted.";        
+    }
     header("Location: ../home.php?uzenet=" . urlencode($uzenet));
 }
 else{

@@ -59,7 +59,7 @@ if (!isset($_SESSION["user"])) {
                 }
                 else
                 {
-                    echo '<td> <Button> Send Message </Button> </td>';
+                    echo '<td> <Button> Visit profile </Button> </td>';
 
                     // admin privileges
                     if($_SESSION["role"] === "admin")

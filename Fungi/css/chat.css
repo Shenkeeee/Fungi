@@ -1,0 +1,124 @@
+/*háttér*/
+body{
+    background-image: url('../img/background/1.jpg');
+    overflow-x: hidden;
+}
+
+/* select
+{
+    padding: 7px 15px;
+} */
+
+
+
+/* The Form Itself */
+
+/* Set a max width for the page content */
+.container {
+    max-width: 800px;
+    margin: 0 auto 10%;
+}
+
+/* Style the form inputs and textarea */
+form input[type=text],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Style the form button */
+form button {
+    background-color: rgb(173, 214, 9);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the form button on hover */
+form button:hover {
+    background-color: #45a049;
+}
+
+button[type=reset]
+{
+    float: right;
+}
+
+
+button[type=reset]:active
+{
+    float: right;
+    animation: up 0.15s;
+    transition: all 0.5s;
+}
+
+@keyframes up
+{
+    20%{
+       transform: scale(0.8);
+    }
+    70%{
+        transform: scale(0.6);
+    }
+}
+
+button[type=submit]:active
+{
+    animation: shake 0.2s;
+}
+
+button[type=submit]
+{
+    animation-name: valtakozo_hatterszin;   /* animáció hozzárendelése az elemhez */
+    animation-duration: 2s;                /* animáció hossza */
+    animation-timing-function: linear;      /* animáció időbeli lefolyása */
+    animation-iteration-count: infinite;    /* animáció lejátszásának száma */
+    animation-direction: alternate;         /* animáció iránya */
+   
+}
+
+@keyframes shake
+{
+    0%, 100%{ transform: translateX(0); }
+    33% { transform: translateX(-5px); }
+    66%{ transform: translateX(5px); }
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 600px) {
+    /* Make the page header and form container full width */
+    header {
+        width: 100%;
+    }
+    .container{
+        padding: 0 20px;
+    }
+
+    /* Reduce the padding on the form inputs */
+    form input[type=text],
+    form input[type=email],
+    form textarea {
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+
+    /* Reduce the font size of the form button */
+    form button {
+        font-size: 14px;
+    }
+}
+
+@keyframes valtakozo_hatterszin {   
+          /* egy animáció létrehozása */
+    0% { background-color: rgb(101, 124, 10) }
+    100% { background-color: rgb(173, 214, 9) }
+  }
+

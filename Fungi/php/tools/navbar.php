@@ -31,6 +31,7 @@
     
         <ul  width="200px">
             <li><a <?php if(isset($_SESSION["user"])) { ?> href="../php/Users.php" <?php } else { ?> href="../php/Login.php" <?php } if($page === "users") { echo 'id="selected"'; } ?>>Users</a></li>
+            <li><a <?php if(isset($_SESSION["user"])) { ?> href="../php/Chat.php" <?php } else { ?> href="../php/Login.php" <?php } if($page === "chat") { echo 'id="selected"'; } ?>>Chat</a></li>
         </ul>
        
 </nav>
