@@ -5,14 +5,6 @@
     }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>navbar</title>
-</head>
-<body>
-
 <nav class="navbarReg" >
     <?php if(!isset($_SESSION["user"])) { ?>
     <ul>
@@ -27,9 +19,9 @@
     <?php } ?>
 </nav>
 
-<nav class="navbarLeft";>
+<nav class="navbarLeft">
     
-        <ul  width="200px">
+        <ul>
             <li><a <?php if(isset($_SESSION["user"])) { ?> href="../php/Users.php" <?php } else { ?> href="../php/Login.php" <?php } if($page === "users") { echo 'id="selected"'; } ?>>Users</a></li>
             <li><a <?php if(isset($_SESSION["user"])) { ?> href="../php/Chat.php" <?php } else { ?> href="../php/Login.php" <?php } if($page === "chat") { echo 'id="selected"'; } ?>>Chat</a></li>
         </ul>
@@ -49,6 +41,3 @@
 
     </ul>
 </nav>
-
-</body>
-</html>

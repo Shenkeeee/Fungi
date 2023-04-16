@@ -46,7 +46,7 @@
                 </fieldset>
 
             </form>
-            <?php echo "<p>". $uzenet . "</p>"; ?>
+            <?php if($uzenet !== ""){echo "<p>". $uzenet . "</p>";}?>
         </main>
 
 
