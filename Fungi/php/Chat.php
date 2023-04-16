@@ -34,6 +34,11 @@
                     if(isset($_GET["userTo"]))
                     {
                         $userTo = $_GET["userTo"];
+                        setcookie($_SESSION['user'] . "lastMessageTo", $userTo, time() + (60*60*24*30), "/");
+                    }
+                    else if(isset($_COOKIE[$_SESSION['user'] . "lastMessageTo"]))
+                    {
+                        $userTo = $_COOKIE[$_SESSION['user'] . "lastMessageTo"];
                     }
 
                     if($userTo==="Everyone")
