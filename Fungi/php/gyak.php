@@ -91,7 +91,7 @@ if (!isset($_SESSION["user"])) {
         <!-- EMAIL -->
         <div class="container_public">
 
-        <h2>Email:</h2>
+        <h2 color = >Email:</h2>
 
         <form action="./Profile.php?setemail=set" method="POST">
                 <input type="hidden" name="setintro" value="<?= $_SESSION["user"] ?>">
