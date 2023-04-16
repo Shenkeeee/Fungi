@@ -95,7 +95,7 @@ if (!isset($_SESSION["user"])) {
 
         <form action="./Profile.php?setemail=set" method="POST">
                 <input type="hidden" name="setintro" value="<?= $_SESSION["user"] ?>">
-                <button class="button_public" type="submit">Change E-mail </button>
+                <button class="button_set type="submit">Change E-mail </button>
         </form>
 
         <?php 
@@ -122,7 +122,7 @@ if (!isset($_SESSION["user"])) {
             <form action="./tools/emailset.php" me  thod="POST">
             <label for="setemail"></label>
             <input type="text" id="email" name="email">
-            <button class="button" type="submit">Subbmit</button>
+            <button class="button_sub" type="submit">Submit</button>
             </form>
 
 
@@ -155,7 +155,7 @@ if (!isset($_SESSION["user"])) {
 
         <form action="./Profile.php?setintro=set" method="POST">
                 <input type="hidden" name="setintro" value="<?= $_SESSION["user"] ?>">
-                <button class="button_public" type="submit">Set Intro </button>
+                <button class="button_set" type="submit">Set Intro </button>
         </form>
 
         <?php 
@@ -182,7 +182,7 @@ if (!isset($_SESSION["user"])) {
             <form action="./tools/introset.php" method="POST">
             <label for="setintro"></label>
             <input type="text" id="intro" name="intro">
-            <button class="button" type="submit">Subbmit</button>
+            <button class="button_sub" type="submit">Submit</button>
             </form>
 
 
@@ -206,7 +206,7 @@ if (!isset($_SESSION["user"])) {
 
         <form action="./Profile.php?setfavfun=set" method="POST">
                 <input type="hidden" name="favfun" value="<?= $_SESSION["user"] ?>">
-                <button class="button_public" type="submit">Set FAVFUN </button>
+                <button class="button_set" type="submit">Set FAVFUN </button>
         </form>
 
         <?php 
@@ -232,7 +232,7 @@ if (!isset($_SESSION["user"])) {
             <form action="./tools/favfunset.php" method="POST">
             <label for="favfun"></label>
             <input type="text" id="favfun" name="favfun">
-            <button class="button" type="submit">Subbmit</button>
+            <button class="button_sub" type="submit">Submit</button>
             </form>
 
 
