@@ -42,7 +42,7 @@ while($row = mysqli_fetch_array($users, MYSQLI_ASSOC))
 }
 if($uzenet=== "" &&  !$_SESSION["user"])
 {
-    $uzenet = "Incorrect username.";
+    $uzenet = "This username does not exists.";
     header("location: ../Login.php?uzenet=".urlencode($uzenet));
 }
 echo $uzenet;

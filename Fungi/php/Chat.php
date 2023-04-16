@@ -57,6 +57,12 @@
                         $messages .= $row["sender"] . ": " . $row["message"] . "\n";
                     }
 
+                    // if there were no previous messages
+                    if($messages === "")
+                    {
+                        $messages = "Start chatting with " . $userTo . "!";
+                    }
+
                     echo $messages;
                     ?></textarea>
 

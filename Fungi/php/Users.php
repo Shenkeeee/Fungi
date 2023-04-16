@@ -61,18 +61,22 @@ if (!isset($_SESSION["user"])) {
                 {
                     ?>
                     <td>
-                                <form action="./Othersprofile.php" method="POST">
-                                    <input type="hidden" name="changeableName" value="<?= $row["name"] ?>">
-                                    <input type="hidden" name="changeableNameSelf" value="<?= $_SESSION["user"] ?>">
-                                    <button type="submit">View Profile</button>
-                                </form>
+                        <form action="./Othersprofile.php" method="POST">
+                            <input type="hidden" name="changeableName" value="<?= $row["name"] ?>">
+                            <input type="hidden" name="changeableNameSelf" value="<?= $_SESSION["user"] ?>">
+                            <button type="submit">View Profile</button>
+                        </form>
                     </td>
 
+                    <td>
+                        <form action="./Chat.php" method="GET">
+                            <input type="hidden" name="userTo" value="<?= $row["name"] ?>">
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </td>
+
+
                     <?php
-
-
-                
-
                     // admin privileges
                     if($_SESSION["role"] === "admin")
                     {

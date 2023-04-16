@@ -35,16 +35,16 @@
             <form action="../php/tools/registerNew.php" method="POST">
                 <fieldset>
                 <legend> Join us!</legend>
-                    <label for="name">Username:*</label>
+                    <label for="name">Username*: (at least 4 characters)</label>
                     <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:*</label>
+                    <label for="email">Email*:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="password">Password:*</label>
+                    <label for="password">Password*: (at least 4 characters)</label>
                     <input type="password" id="password" name="password" required>
 
-                    <label for="confpassword">Confirm Password:*</label>
+                    <label for="confpassword">Confirm Password*:</label>
                     <input type="password" id="confpassword" name="confpassword" required>
 
 
