@@ -1,8 +1,10 @@
 /*háttér*/
 
+/*
 .container_public {
     display: flex;
 }
+*/
 
 
 body{
@@ -12,9 +14,15 @@ body{
 
 button {
 
+    margin-left: 5vh;
+    display: inline-block;
+    font-size: 2vh;
+    
     background-color: rgb(173, 214, 9);
     color: white;
-    padding: 20px 60px;
+    width: 10vw;
+    height: 5vw;
+
 
     border: none;
     border-radius: 4px;
@@ -29,10 +37,13 @@ button:hover {
 .button_public{
     margin-left: 5vh;
     display: inline-block;
+    font-size: 2vh;
     
     background-color: rgb(173, 214, 9);
     color: white;
-    padding: 20px 40px;
+    width: 10vw;
+    height: 5vw;
+    padding: 3%;
 
     border: none;
     border-radius: 4px;
@@ -40,10 +51,26 @@ button:hover {
 }
 
 .button_private{
+
     margin-left: 5vh;
     display: inline-block;
+    font-size: 2vh;
     
-    background-color: rgb(197, 166, 12);
+    background-color: rgb(187, 147, 15);
+    color: white;
+    width: 10vw;
+    height: 5vw;
+    padding: 3%;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.button_delete {
+
+    background-color: rgb(113, 6, 6);
     color: white;
     padding: 20px 60px;
 
@@ -51,4 +78,66 @@ button:hover {
     border-radius: 4px;
     cursor: pointer;
 }
+
+
+.button_set{
+    margin-left: 5vh;
+    display: inline-block;
+    
+    background-color: rgb(128, 128, 128);
+    color: white;
+    padding: 20px 40px;
+    padding: 3%;
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+/* ------------------------------------------- */
+
+
+.container_public {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    justify-items: center;
+  }
+  
+  .email {
+    display: grid;
+    grid-template-columns: 1fr 60px 60px;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container_public {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+    }
+    .email {
+      grid-template-columns: 1fr 1fr;
+      grid-row: 1;
+      grid-column: 1 / span 2;
+      justify-items: start;
+      font-size: 14px;
+    }
+    .set {
+      grid-row: 2;
+      grid-column: 1;
+    }
+    .public {
+      grid-row: 2;
+      grid-column: 2;
+    }
+  }
+  
+ 
+  
+  
+  
 

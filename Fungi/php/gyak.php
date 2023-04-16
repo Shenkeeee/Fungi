@@ -95,7 +95,7 @@ if (!isset($_SESSION["user"])) {
 
         <form action="./Profile.php?setemail=set" method="POST">
                 <input type="hidden" name="setintro" value="<?= $_SESSION["user"] ?>">
-                <button class="button_public" type="submit">Change E-mail </button>
+                <button class="button_set" type="submit">Change E-mail </button>
         </form>
 
         <?php 
@@ -148,6 +148,11 @@ if (!isset($_SESSION["user"])) {
 
 
 
+
+
+
+
+
         <!-- INTRO -->
         <div class="container_public">
 
@@ -155,7 +160,7 @@ if (!isset($_SESSION["user"])) {
 
         <form action="./Profile.php?setintro=set" method="POST">
                 <input type="hidden" name="setintro" value="<?= $_SESSION["user"] ?>">
-                <button class="button_public" type="submit">Set Intro </button>
+                <button class="button_set" type="submit">Set Intro </button>
         </form>
 
         <?php 
@@ -206,7 +211,7 @@ if (!isset($_SESSION["user"])) {
 
         <form action="./Profile.php?setfavfun=set" method="POST">
                 <input type="hidden" name="favfun" value="<?= $_SESSION["user"] ?>">
-                <button class="button_public" type="submit">Set FAVFUN </button>
+                <button class="button_set" type="submit">Set FAVFUN </button>
         </form>
 
         <?php 

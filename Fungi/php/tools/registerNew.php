@@ -34,16 +34,6 @@ if(isset($name) && isset($password) && isset($confpassword) && isset($email) && 
             $hashedPass = password_hash($password,PASSWORD_DEFAULT);
         }
 
-        if(strlen($name) < 4)
-        {
-            $errors[] = "The username should be more than 4 characters.";
-        }
-
-        if(strlen($password) < 4)
-        {
-            $errors[] = "The password should be more than 4 characters.";
-        }
-
         // if there were no errors
         if(empty($errors))
         {
