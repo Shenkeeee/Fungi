@@ -55,49 +55,36 @@
             <header><h1><span><?php echo "$name"?>'s Profile: </span></h1></header>
             <main>
             <img src="../img/profilePictures/<?php echo "$img" ?>" alt="Profile_Picture" width="200" height="200">
-            <h2>Name: <?php echo "$name"?></h2>
+            <h2 style= "color:  rgb(173, 214, 9) " >Name:</h2>
+            <h2><?php echo "$name"?></h2>
 
 
 
             <?php if ($public_email == True){ ?>
-                <h2>Email: <?php echo "$email"?> </h2>
+                <h2 style= "color:  rgb(173, 214, 9) " >Email:</h2>
+                <h2><?php echo "$email"?> </h2>
             <?php
             } ?>
+
+            <h2 style= "color:  rgb(173, 214, 9) " >Role:</h2>
             
-            <h2>Role: <?php echo "$role"?> </h2>
+            <h2><?php echo "$role"?> </h2>
 
             <?php if ($public_intro == True){ ?>
-                <h2>Introduction: <?php echo "$intro"?> </h2>
+                <h2 style= "color:  rgb(173, 214, 9) " >Introduction:</h2>
+                <h2> <?php echo "$intro"?> </h2>
             <?php
             } ?>
 
             <?php if ($public_favfun == True){ ?>
-                <h2>Favourite Fungi: <?php echo "$favfun"?> </h2>
+                <h2 style= "color:  rgb(173, 214, 9) " >Favourite Fungi:</h2>
+                <h2> <?php echo "$favfun"?> </h2>
             <?php
             } ?>
             
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
             
         </main>
-
-
-
-
-
 
 
     </div>
