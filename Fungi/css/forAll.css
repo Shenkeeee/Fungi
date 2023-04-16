@@ -35,12 +35,12 @@ footer{
 #selected
 {
     text-decoration: underline;
-    text-decoration-color:rgb(173, 214, 9);
-    text-decoration-thickness: 2px;
+    text-shadow: 2px 1px 3px black;
 }
 
 .navbar
 {
+    text-shadow: 2px 1px 3px black;
     top: 0;
     position: fixed;
     background: #333333;
@@ -51,34 +51,12 @@ footer{
     z-index: 10;
 
     text-align: center;
-    /*float: left;*/
-    /*height: 10%;*/
 }
 
-.navbarReg
+.navbarReg a
 {
-    top: 0;
-    position: fixed;
-    padding: 15px 0;
-    margin: 0 0;
-    right: 0;
-    overflow: hidden;
-
-    /*feljebb van és nincs háttere*/
-    z-index: 11;
-}
-
-.navbarLeft
-{
-    top: 0;
-    position: fixed;
-    padding: 15px 0;
-    margin: 0 0;
-    left: 0;
-    overflow: hidden;
-
-    /*feljebb van és nincs háttere*/
-    z-index: 11;
+    color: rgb(153, 185, 8);
+    text-shadow: 2px 2px 3px grey;
 }
 
 ul{
