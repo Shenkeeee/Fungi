@@ -52,7 +52,7 @@
     <div class="content">
         <div class="container">
 
-            <header><h1><span><?php echo "$name"?>'s Profile: </span></h1></header>
+            <header><h1><span><?php echo "$name"?>'s Profile </span></h1></header>
             <main>
             <img src="../img/profilePictures/<?php echo "$img" ?>" alt="Profile_Picture" width="200" height="200">
             <h2 style= "color:  rgb(173, 214, 9) " >Name:</h2>

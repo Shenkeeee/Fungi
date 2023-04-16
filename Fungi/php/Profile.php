@@ -119,7 +119,7 @@ if (!isset($_SESSION["user"])) {
             //$setintro = $_GET['setintro'];
             ?>
 
-            <form action="./tools/emailset.php" me  thod="POST">
+            <form action="./tools/emailset.php" method="POST">
             <label for="setemail"></label>
             <input type="email" id="email" name="email">
             <button class="button_sub" type="submit">Submit</button>
