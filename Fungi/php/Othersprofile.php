@@ -29,10 +29,15 @@
         {
             if($row["name"] === $_POST["changeableName"])
             {
+                $img = $row["profile_picture"];
                 $name = $row["name"];
                 $email = $row["email"];
+                $public_email = $row["public_email"];
                 $role = $row["role"];
-                $img = $row["profile_picture"];
+                $intro = $row["intro"];
+                $public_intro = $row["public_intro"];
+                $favfun = $row["favfun"];
+                $public_favfun = $row["public_favfun"];
 
         }
         }
@@ -49,10 +54,27 @@
 
             <header><h1><span><?php echo "$name"?>'s Profile: </span></h1></header>
             <main>
-            <img src="../img/profilePictures/<?php echo "$img" ?>" alt="Profile_Picture" width="200" height="150">
+            <img src="../img/profilePictures/<?php echo "$img" ?>" alt="Profile_Picture" width="200" height="200">
             <h2>Name: <?php echo "$name"?></h2>
-            <h2>Email: <?php echo "$email"?> </h2>
+
+
+
+            <?php if ($public_email == True){ ?>
+                <h2>Email: <?php echo "$email"?> </h2>
+            <?php
+            } ?>
+            
             <h2>Role: <?php echo "$role"?> </h2>
+
+            <?php if ($public_intro == True){ ?>
+                <h2>Introduction: <?php echo "$intro"?> </h2>
+            <?php
+            } ?>
+
+            <?php if ($public_favfun == True){ ?>
+                <h2>Favourite Fungi: <?php echo "$favfun"?> </h2>
+            <?php
+            } ?>
             
         
         
