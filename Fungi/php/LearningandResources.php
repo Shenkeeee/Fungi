@@ -28,7 +28,7 @@
 
         <div class="videoWrapper">
 <!--            I tried both /embed/ and /watch?v= as the URL-->
-            <iframe style="width: 100%; height: 100%"  src="https://www.youtube.com/embed/GgV_cpb1BX0?t=0&autoplay=1&loop=1&mute=1&controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe style="width: 100%; height: 100%"  src="https://www.youtube.com/embed/GgV_cpb1BX0?t=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;controls=0" title="YouTube video player" allowfullscreen></iframe>
         </div>
 
         <h1 class="title">Resources</h1>
@@ -58,7 +58,7 @@
             <img src="../img/learning/3.png" alt="Fungi: A Very Short Introduction" class="imagehovi ">
             <div class="overlayhovi">
               <div class="texthovi">"Fungi: A Very Short Introduction" by Nicholas P. Money - This concise book provides an overview of the biology, diversity, and cultural significance of fungi, as well as their role in various ecosystems and human activities.
-                <p><a  href="https://www.amazon.com/Fungi-Very-Short-Introduction-Introductions/dp/0199688788/ref=sr_1_1?crid=GUDC0E98K5B1&keywords=Fungi%3A+A+Very+Short+Introduction&qid=1678986796&s=books&sprefix=fungi+a+very+short+introduction%2Cstripbooks-intl-ship%2C216&sr=1-1" target="_blank">Amazon Fungi: A Very Short Introduction </a></p>
+                <p><a  href="https://www.amazon.com/Fungi-Very-Short-Introduction-Introductions/dp/0199688788" target="_blank">Amazon Fungi: A Very Short Introduction </a></p>
               </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
             <img src="../img/learning/5.png" alt="Fantastic Fungi: How Mushrooms Can Heal, Shift Consciousness, and Save the Planet" class="imagehovi ">
             <div class="overlayhovi">
               <div class="texthovi">"Fantastic Fungi: How Mushrooms Can Heal, Shift Consciousness, and Save the Planet" by Louie Schwartzberg, Eugenia Bone, and Paul Stamets - This visually stunning book includes the science, culture, and spirituality of mushrooms, and their potential to help solve some of the world's most pressing problems.
-                <p><a  href="https://www.amazon.com/Fantastic-Fungi-Mushrooms-Consciousness-Planet/dp/1683837045/ref=sr_1_1?crid=JVIMIYHJOW06&keywords=Fantastic+Fungi%3A+How+Mushrooms+Can+Heal%2C+Shift+Consciousness%2C+and+Save+the+Plane&qid=1678987123&s=books&sprefix=fantastic+fungi+how+mushrooms+can+heal%2C+shift+consciousness%2C+and+save+the+plane%2Cstripbooks-intl-ship%2C186&sr=1-1" target="_blank">Amazon Fantastic Fungi: How Mushrooms Can Heal, Shift Consciousness, and Save the Planet </a></p>
+                <p><a  href="https://www.amazon.com/Fantastic-Fungi-Mushrooms-Consciousness-Planet/dp/1683837045" target="_blank">Amazon Fantastic Fungi: How Mushrooms Can Heal, Shift Consciousness, and Save the Planet </a></p>
               </div>
             </div>
         </div>
@@ -131,7 +131,7 @@
     </div>
 
     <div class="website">
-      <a class="websitetext" href=" https://fungi.com/" title="Fungi Perfecti offers mushroom cultivation supplies, books, and seminars for mushroom enthusiasts and professionals interested in mycology, ecology, and sustainability.">Fungi Perfecti</a>
+      <a class="websitetext" href="https://fungi.com/" title="Fungi Perfecti offers mushroom cultivation supplies, books, and seminars for mushroom enthusiasts and professionals interested in mycology, ecology, and sustainability.">Fungi Perfecti</a>
     </div>
 
     <div class="website">

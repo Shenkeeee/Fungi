@@ -47,14 +47,18 @@
             </p>
         </div>
         <h2>Our Favourite (and only) Fungi themed song:</h2>
-    <audio controls>
-  <source src="../media/mushroomsong.mp3" type="audio/mpeg"/>
-  This browser cannot support audio, sorry!
-</audio>
-<video controls autoplay muted loop width="360">
-  <source src="../media/video.mp4" type="video/mp4"/>
-  This browser cannot support video, sorry!
-</video>
+        <audio controls>
+            <source src="../media/mushroomsong.mp3" type="audio/mpeg"/>
+            This browser cannot support audio, sorry!
+        </audio>
+        <video controls autoplay loop width="360">
+            <source src="../media/video.mp4" type="video/mp4"/>
+            This browser cannot support video, sorry!
+        </video>
+        <script>
+            var video = document.querySelector('video');
+            video.muted = true;
+        </script>
 
     </div>
 </div>

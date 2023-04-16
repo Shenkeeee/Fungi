@@ -88,7 +88,7 @@
                     </select>
 
                 <label for="message">Write</label>
-                <input type="text" id="message" name="message"  required></input>
+                <input type="text" id="message" name="message"  required>
 
                 <button type="submit">Send Message</button>
                 <button type="reset">Reset</button>

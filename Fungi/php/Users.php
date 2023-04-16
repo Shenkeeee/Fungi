@@ -14,7 +14,7 @@ if (!isset($_SESSION["user"])) {
     <title>Users</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/forAll.css">
-    <link rel="stylesheet" href="../css/users.css"
+    <link rel="stylesheet" href="../css/users.css">
 
     <link rel="icon" href="../img/icon.png">
 </head>
