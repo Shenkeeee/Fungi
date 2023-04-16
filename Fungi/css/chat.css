@@ -10,6 +10,9 @@ body{
 } */
 
 
+#messages {
+    text-align: left;
+}  
 
 /* The Form Itself */
 

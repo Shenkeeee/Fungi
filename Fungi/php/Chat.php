@@ -25,54 +25,57 @@
         <main>
             <form action="./tools/writeMessage.php" method="POST">    
                     <label for="messages">Messages</label>
-                    <textarea id="messages" name="messages" rows="22" readonly>
-                    <?php
+                    <!-- listing messages -->
+                    <textarea id="messages" name="messages" rows="22" readonly><?php
                     require_once("./tools/connect.php");
 
-                    $sql = "SELECT * from chat";
+                    // who did we send the last message to?
+                    $userTo = "Everyone";
+                    if(isset($_GET["userTo"]))
+                    {
+                        $userTo = $_GET["userTo"];
+                    }
+
+                    if($userTo==="Everyone")
+                    {
+                        $sql = "SELECT * from chat WHERE receiver = '$userTo'";
+                    }
+                    else{
+                        $sql = "SELECT * from chat WHERE (receiver = '$userTo' AND sender = '{$_SESSION['user']}') OR receiver = '{$_SESSION['user']}' AND sender = '$userTo' ";
+                    }
                     $messagesData = mysqli_query($conn,$sql);
+
+                    $messages = "";
 
                     while($row = mysqli_fetch_array($messagesData))
                     {
-                        echo $row["sender"] . ":" . $row["message"] . "\n";
+                        $messages .= $row["sender"] . ": " . $row["message"] . "\n";
                     }
-                ?>
-                    </textarea>
 
-                    <!-- specific message sending -->
+                    echo $messages;
+                    ?></textarea>
 
-                    <!-- <label for="user">To:</label> -->
-                    <!-- <select id="user" name="user" required>
-                    <?php
-                        // session_start();
+                    <!-- switch to list users -->
+                    <label for="userTo">To:</label>
+                    <select id="userTo" name="userTo" required oninput="location='./Chat.php?userTo=' + this.value;">
+                        <option value = "Everyone" selected>Everyone</option>
+                        <?php
+                        require_once "./tools/connect.php";
+                        $sql = "SELECT * FROM users";
+                        $usersData = mysqli_query($conn, $sql);
+                        while ($row = mysqli_fetch_array($usersData)) {
+                            if($row['name']===$_SESSION['user']){continue;}
+                            if($userTo === $row['name'])
+                            {
+                                echo '<option value="' . $row['name'] . '" selected>' . $row['name'] . '</option>';
+                            }
+                            else{
+                                echo '<option value="' . $row['name'] . '">' . $row['name'] . '</option>';
+                            }
+                        }
+                        ?>
+                    </select>
 
-                        // require_once("./connect.php");
-
-                        // if(isset($_POST["messageTo"]))
-                        // {
-                        //     $messageTo = $_POST["messageTo"];
-                        // }
-
-                        // $sql = "SELECT * FROM users";
-                        // $users = mysqli_query($conn, $sql);
-
-                        // if (!$users) {
-                        //     echo mysqli_error($conn);
-                        // }
-
-                        // if(mysqli_num_rows($users) == 0) {
-                        //     echo "<option value=''>No users found</option>";
-                        // } else {
-                        //     while($row = mysqli_fetch_array($users, MYSQLI_ASSOC)) {
-                        //         echo "<option value='" . $row["name"] . "'>" . $row["name"] . "</option>";
-                        //     }
-                        // }
-                    ?>
-                    </select> -->
-
-                <?php
-                    // require_once "./tools/listMessages.php";
-                ?>
                 <label for="message">Write</label>
                 <input type="text" id="message" name="message"  required></input>
 

@@ -2,7 +2,7 @@
 
 require_once "./connect.php";
 
-$uzenet = "";
+$errors = [];
 
 $name = $_POST["name"];
 $password = $_POST["password"];
@@ -11,52 +11,45 @@ $email = $_POST["email"];
 
 if(isset($name) && isset($password) && isset($confpassword) && isset($email) && trim($_GET["name"] !== "") && trim($_GET["password"] !== "") && trim($_GET["email"] !== "") && trim($_GET["confpassword"] !== ""))
 {
-    if ($password === $confpassword)
-    {
-        $hashedPass = password_hash($password,PASSWORD_DEFAULT);
-
         $sql = "SELECT * from users";
         $users = mysqli_query($conn, $sql);
         while($row = mysqli_fetch_array($users,MYSQLI_ASSOC))
         {
-            echo $row["name"];
             if($row["name"] === $name)
             {
-                $uzenet= "There is someone with the same username.";
-                header("Location: ../register.php?uzenet=" . urlencode($uzenet));
+                $errors[] = "There is someone with the same username.";
             }
 
             if($row["email"] === $email)
             {
-                if($uzenet === "")
-                {   
-                    $uzenet= "There is someone with the same email.";
-                    header("Location: ../register.php?uzenet=" . urlencode($uzenet));
-                }
+                $errors[] = "There is someone with the same email.";
             }
         }
 
-        // if there was no mistake with the sql
-        if($uzenet === "")
+        if ($password !== $confpassword){
+            $errors[] = "The two passwords are not the same.";
+        }
+        else
+        {
+            $hashedPass = password_hash($password,PASSWORD_DEFAULT);
+        }
+
+        // if there were no errors
+        if(empty($errors))
         {
             // adding user to sql
             $stmt = $conn->prepare("INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, 'user')");
             $stmt->bind_param("sss", $name, $email, $hashedPass);
             $stmt->execute();
 
-            $uzenet= "Registration done.";
-            header("Location: ../register.php?uzenet=" . urlencode($uzenet));    
+            $errors[] = "Registration done.";
         }
-        
-    }
 
-    else{
-        $uzenet= "The two passwords are not the same.";
-        header("Location: ../register.php?uzenet=" . urlencode($uzenet));
-    }
 }
 
 else{
-    $uzenet="Fill all of the fields.";
-    header("Location: ../register.php?uzenet=" . urlencode($uzenet));
+    $errors[] = "Fill all of the fields.";
 }
+
+$uzenet = implode("<br>", $errors);
+header("Location: ../register.php?uzenet=" . urlencode($uzenet));
