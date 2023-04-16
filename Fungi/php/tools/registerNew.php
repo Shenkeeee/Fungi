@@ -34,6 +34,16 @@ if(isset($name) && isset($password) && isset($confpassword) && isset($email) && 
             $hashedPass = password_hash($password,PASSWORD_DEFAULT);
         }
 
+        if(strlen($name) < 4)
+        {
+            $errors[] = "The Username must be at least 4 characters.";
+        }
+        
+        if(strlen($password) < 4)
+        {
+            $errors[] = "The password must be at least 4 characters.";
+        }
+
         // if there were no errors
         if(empty($errors))
         {
@@ -48,6 +58,31 @@ if(isset($name) && isset($password) && isset($confpassword) && isset($email) && 
 }
 
 else{
+
+    if($row["name"] === $name)
+    {
+        $errors[] = "There is someone with the same username.";
+    }
+
+    if($row["email"] === $email)
+    {
+        $errors[] = "There is someone with the same email.";
+    }
+
+    if ($password !== $confpassword){
+        $errors[] = "The two passwords are not the same.";
+    }
+
+    if(strlen($name) < 4)
+    {
+        $errors[] = "The Username must be at least 4 characters.";
+    }
+    
+    if(strlen($password) < 4)
+    {
+        $errors[] = "The password must be at least 4 characters.";
+    }
+
     $errors[] = "Fill all of the fields.";
 }
 
