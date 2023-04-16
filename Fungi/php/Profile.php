@@ -91,11 +91,11 @@ if (!isset($_SESSION["user"])) {
         <!-- EMAIL -->
         <div class="container_public">
 
-        <h2>Email:</h2>
+        <h2 style= "color: rgb(173, 214, 9) ">Email:</h2>
 
         <form action="./Profile.php?setemail=set" method="POST">
                 <input type="hidden" name="setintro" value="<?= $_SESSION["user"] ?>">
-                <button class="button_set type="submit">Change E-mail </button>
+                <button class="button_set" type="submit">Change E-mail </button>
         </form>
 
         <?php 
@@ -121,7 +121,7 @@ if (!isset($_SESSION["user"])) {
 
             <form action="./tools/emailset.php" me  thod="POST">
             <label for="setemail"></label>
-            <input type="text" id="email" name="email">
+            <input type="email" id="email" name="email">
             <button class="button_sub" type="submit">Submit</button>
             </form>
 
@@ -130,7 +130,7 @@ if (!isset($_SESSION["user"])) {
             }
             else{?>
 
-                <h2> <?php echo "$email"?> </h2>
+                <h3> <?php echo "$email"?> </h3>
 
                 <?php 
             }
@@ -151,7 +151,7 @@ if (!isset($_SESSION["user"])) {
         <!-- INTRO -->
         <div class="container_public">
 
-        <h2>Intro:</h2>
+        <h2 style= "color: rgb(173, 214, 9) ">Intro:</h2>
 
         <form action="./Profile.php?setintro=set" method="POST">
                 <input type="hidden" name="setintro" value="<?= $_SESSION["user"] ?>">
@@ -190,7 +190,7 @@ if (!isset($_SESSION["user"])) {
             }
             else{?>
 
-                <h2>"  <?php echo "$intro"?> "</h2>
+                <h3>"  <?php echo "$intro"?> "</h3>
 
                 <?php 
             }
@@ -201,7 +201,7 @@ if (!isset($_SESSION["user"])) {
 
         <div class="container_public">
 
-        <h2>Favourite Fungi:</h2>
+        <h2 style= "color: rgb(173, 214, 9)">Favourite Fungi:</h2>
 
 
         <form action="./Profile.php?setfavfun=set" method="POST">
@@ -240,7 +240,7 @@ if (!isset($_SESSION["user"])) {
             }
             else{?>
 
-                <h2> " <?php echo "$favfun"?> " </h2>
+                <h3> " <?php echo "$favfun"?> " </h3>
 
                 <?php 
             }
