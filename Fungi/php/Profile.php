@@ -35,7 +35,7 @@ if (!isset($_SESSION["user"])) {
         <div class="container">
 
             <header><h1><span>Profile</span></h1></header>
-        <main>
+            <main>
             <h2> Welcome matey! </h2>
 
             <!-- delete from database -->
@@ -44,7 +44,63 @@ if (!isset($_SESSION["user"])) {
                 <input type="hidden" name="deletableName" value="<?= $_SESSION["user"] ?>">
                 <button type="submit">Delete User</button>
             </form>
+
+
+            <!-- The enctype="multipart/form-data" attribute is required for file uploads. -->
+            <!-- upload profile picture -->
+            <form action="./tools/upload.php" method="POST" enctype="multipart/form-data">
+                <label for="profilePicture">Upload Profile Picture:</label>
+                <input type="file" name="profilePicture" id="profilePicture">
+                <button type="submit">Upload</button>
+            </form>
+
+
+        <?php
+
+        //kép megjelenítése 
+        //sql betölt 
+        require_once "./tools/connect.php";
+
+        $sql = "SELECT * FROM users";
+        $users = mysqli_query($conn, $sql);
+
+        while($row = mysqli_fetch_array($users, MYSQLI_ASSOC))
+        {
+            if($row["name"] === $_SESSION["user"])
+            {
+                $img = $row["profile_picture"];
+
+            }
+        }
+
+
+        ?>
+
+        
+        <img src="../img/profilePictures/<?php echo "$img" ?>" alt="Profile_Picture" width="200" height="150">
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
         </main>
+
+
+
+
+
+
 
     </div>
     </div>

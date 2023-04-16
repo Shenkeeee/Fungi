@@ -11,7 +11,7 @@ $uzenet = "";
 if(!isset($name) || !isset($pass))
 {
     $uzenet = "Please fill your data!";
-    header("location: ../Login.php?uzenet=" . urlencode($uzenet) );
+    // header("location: ../Login.php?uzenet=" . urlencode($uzenet) );
 }
 
 
@@ -25,10 +25,10 @@ while($row = mysqli_fetch_array($users, MYSQLI_ASSOC))
         // we also check the unhashed cuz of first regs
         if(password_verify($pass,$row["password"]) || $row["password"] === $pass )
         {
-            $_SESSION["user"] = "$name";
+        $_SESSION["user"] = "$name";
             $_SESSION["role"] = $row["role"];
-            header("location: ../Home.php");    
-        }
+        header("location: ../Home.php");
+    }
         else
         {
             if($uzenet=== "")
@@ -36,8 +36,8 @@ while($row = mysqli_fetch_array($users, MYSQLI_ASSOC))
                 $uzenet = "Incorrect password.";
                 header("location: ../Login.php?uzenet=".urlencode($uzenet));
             }
-        }
-        
+}
+
     }
 }
 if($uzenet=== "" &&  !$_SESSION["user"])

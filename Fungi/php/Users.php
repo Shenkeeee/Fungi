@@ -59,7 +59,19 @@ if (!isset($_SESSION["user"])) {
                 }
                 else
                 {
-                    echo '<td> <Button> Visit profile </Button> </td>';
+                    ?>
+                    <td>
+                                <form action="./Othersprofile.php" method="POST">
+                                    <input type="hidden" name="changeableName" value="<?= $row["name"] ?>">
+                                    <input type="hidden" name="changeableNameSelf" value="<?= $_SESSION["user"] ?>">
+                                    <button type="submit">View Profile</button>
+                                </form>
+                    </td>
+
+                    <?php
+
+
+                
 
                     // admin privileges
                     if($_SESSION["role"] === "admin")
@@ -81,6 +93,10 @@ if (!isset($_SESSION["user"])) {
                                     <button type="submit">Delete User</button>
                                 </form>
                             </td>
+
+                
+
+
                         <?php
                         
                     }
